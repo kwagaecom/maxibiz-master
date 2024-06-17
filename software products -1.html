@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MaxiBiz Bootstrap Business Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
+  <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors/blue.css">
+
+  <!-- =======================================================
+    Template Name: MaxiBiz
+    Template URL: https://templatemag.com/maxibiz-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+    <style>
+.social-share {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.social-share a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-share a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-share a svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+  vertical-align: middle;
+}
+
+.social-share a.facebook svg {
+  fill: #3b5998;
+}
+
+.social-share a.whatsapp svg {
+  fill: #25d366;
+}
+
+.social-share a.pinterest svg {
+  fill: #bd081c;
+}
+
+.social-share a.linkedin svg {
+  fill: #0077b5;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-share {
+    display: none;
+  }
+}
+
+/* Media Queries Shift Media Solutions| SMS */
+
+@media only screen and (max-width: 1080px) {
+  .body {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+  </style>
+
+
+  <div class="social-share">
+
+    <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.05,0H3.95A3.952,3.952,0,0,0,0,3.95V20.05A3.952,3.952,0,0,0,3.95,24H12.63V14.71H9.62v-3H12.63v-1.5c0-3.6,2.2-5.55,5.38-5.55a28.475,28.475,0,0,1,3.18.16v3L18.79,9c-1.7,0-2,.81-2,1.95v1.5h4.05l-.53,3.05H16.8V24H20.05A3.952,3.952,0,0,0,24,20.05V3.95A3.952,3.952,0,0,0,20.05,0Z" />
+      </svg>
+    </a>
+
+    <a href="#" class="whatsapp"><svg viewBox="0 0 64 64">
+        <path d="M6.9,48.4c-0.4,1.5-0.8,3.3-1.3,5.2c-0.7,2.9,1.9,5.6,4.8,4.8l5.1-1.3c1.7-0.4,3.5-0.2,5.1,0.5 c4.7,2.1,10,3,15.6,2.1c12.3-1.9,22-11.9,23.5-24.2C62,17.3,46.7,2,28.5,4.2C16.2,5.7,6.2,15.5,4.3,27.8c-0.8,5.6,0,10.9,2.1,15.6 C7.1,44.9,7.3,46.7,6.9,48.4z M21.3,19.8c0.6-0.5,1.4-0.9,1.8-0.9s2.3-0.2,2.9,1.2c0.6,1.4,2,4.7,2.1,5.1c0.2,0.3,0.3,0.7,0.1,1.2 c-0.2,0.5-0.3,0.7-0.7,1.1c-0.3,0.4-0.7,0.9-1,1.2c-0.3,0.3-0.7,0.7-0.3,1.4c0.4,0.7,1.8,2.9,3.8,4.7c2.6,2.3,4.9,3,5.5,3.4 c0.7,0.3,1.1,0.3,1.5-0.2c0.4-0.5,1.7-2,2.2-2.7c0.5-0.7,0.9-0.6,1.6-0.3c0.6,0.2,4,1.9,4.7,2.2c0.7,0.3,1.1,0.5,1.3,0.8 c0.2,0.3,0.2,1.7-0.4,3.2c-0.6,1.6-2.1,3.1-3.2,3.5c-1.3,0.5-2.8,0.7-9.3-1.9c-7-2.8-11.8-9.8-12.1-10.3c-0.3-0.5-2.8-3.7-2.8-7.1 C18.9,22.1,20.7,20.4,21.3,19.8z"></path>
+      </svg></a>
+
+    <a href="#" class="pinterest"><svg viewBox="0 0 64 64">
+        <path d="M14.4,53.8c2.4,2,6.1,0.6,6.8-2.4l0-0.1c0.4-1.8,2.4-10.2,3.2-13.7c0.2-0.9,0.2-1.8-0.1-2.7 C24.2,34,24,32.8,24,31.5c0-4.1,2.4-7.2,5.4-7.2c2.5,0,3.8,1.9,3.8,4.2c0,2.6-1.6,6.4-2.5,9.9c-0.7,3,1.5,5.4,4.4,5.4 c5.3,0,8.9-6.8,8.9-14.9c0-6.1-4.1-10.7-11.6-10.7c-8.5,0-13.8,6.3-13.8,13.4c0,2.4,0.7,4.2,1.8,5.5c0.5,0.6,0.6,0.9,0.4,1.6 c-0.1,0.5-0.4,1.8-0.6,2.2c-0.2,0.7-0.8,1-1.4,0.7c-3.9-1.6-5.7-5.9-5.7-10.7c0-8,6.7-17.5,20-17.5c10.7,0,17.7,7.7,17.7,16 c0,11-6.1,19.2-15.1,19.2c-1.9,0-3.8-0.7-5.2-1.6c-0.9-0.6-2.1-0.1-2.4,0.9c-0.5,1.9-1.1,4.3-1.3,4.9c-0.1,0.5-0.3,0.9-0.4,1.4 c-1,2.7,0.9,5.5,3.7,5.7c2.1,0.1,4.2,0,6.3-0.3c12.4-2,22.1-12.2,23.4-24.7C61.5,18.1,48.4,4,32,4C16.5,4,4,16.5,4,32 C4,40.8,8.1,48.6,14.4,53.8z"></path>
+      </svg></a>
+
+    <a href="#" class="linkedin"><svg viewBox="0 0 64 64">
+        <path d="M8,54.7C8,55.4,8.6,56,9.3,56h9.3c0.7,0,1.3-0.6,1.3-1.3V23.9c0-0.7-0.6-1.3-1.3-1.3H9.3 c-0.7,0-1.3,0.6-1.3,1.3V54.7z"></path>
+        <path d="M46.6,22.3c-4.5,0-7.7,1.8-9.4,3.7c-0.4,0.4-1.1,0.1-1.1-0.5l0-1.6c0-0.7-0.6-1.3-1.3-1.3h-9.4 c-0.7,0-1.3,0.6-1.3,1.3c0.1,5.7,0,25.4,0,30.7c0,0.7,0.6,1.3,1.3,1.3h9.5c0.7,0,1.3-0.6,1.3-1.3V37.9c0-1,0-2,0.3-2.7 c0.8-2,2.6-4.1,5.7-4.1c4.1,0,6,3.1,6,7.6v15.9c0,0.7,0.6,1.3,1.3,1.3h9.3c0.7,0,1.3-0.6,1.3-1.3V37.4C60,27.1,54.1,22.3,46.6,22.3 z"></path>
+        <path d="M13.9,18.9L13.9,18.9c3.8,0,6.1-2.4,6.1-5.4C19.9,10.3,17.7,8,14,8c-3.7,0-6,2.3-6,5.4 C8,16.5,10.3,18.9,13.9,18.9z"></path>
+      </svg></a>
+
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js">
+var socialShareButtons = document.querySelectorAll(".social-share a");
+
+function shareOnFacebook() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.facebook.com/?u=" +
+    encodeURIComponent(url) +
+    "&t=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnWhatsApp() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl = "https://wa.me/?text=" + encodeURIComponent(title + " " + url);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnPinterest() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.pinterest.com/pin/create/button/?url=" +
+    encodeURIComponent(url) +
+    "&media=&description=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnLinkedIn() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+    encodeURIComponent(url) +
+    "&title=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+socialShareButtons.forEach(function (button) {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    var shareType = this.classList[0];
+    switch (shareType) {
+      case "facebook":
+        shareOnFacebook();
+        break;
+      case "whatsapp":
+        shareOnWhatsApp();
+        break;
+      case "pinterest":
+        shareOnPinterest();
+        break;
+      case "linkedin":
+        shareOnLinkedIn();
+        break;
+    }
+  });
+});
+
+  </script>
+
+  <style>
+    body {
+      margin: 15px;
+    }
+
+    .dropdown-menu > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown-menu > ul > li > a {
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: 400;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    @media(min-width:992px) {
+      .nav > li {
+        position: initial;
+      }
+      .open > .dropdown-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 60px 0 0 0;
+      }
+      .dropdown-menu > ul {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+      }
+      .dropdown-menu > ul + ul {
+        border-left: 1px solid #e5e5e5;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar-header {
+        float: none;
+      }
+      .navbar-left,
+      .navbar-right {
+        float: none !important;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+      .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+        display: none!important;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+      }
+      .navbar-nav > li {
+        float: none;
+      }
+      .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collapse.in {
+        display: block !important;
+      }
+      .dropdown-menu {
+        position: relative;
+        width: 100%;
+        float: left;
+      }
+      .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+.nav-item.active {
+    color: #fff; /* White text */
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); /* Gradient background */
+    padding: 1px;
+    border-radius: 1px;
+}
+
+
+  </style>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" class="nav-item active" href="index0B.html">Kwaga Ltd</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="#">About Us <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Portfolio</a></li>
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Card Design</a></li>
+                <li><a href="#">Brouchure Design</a></li>
+                <li><a href="#">Pamplet Design</a></li>
+                <li><a href="#">Handbill Design</a></li>
+                <li><a href="#">Catlogue Design</a></li>
+                <li><a href="#">Flex banner Design</a></li>
+                <li><a href="#">Bill book Design</a></li>
+                <li><a href="#">Latherhead Design</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Graphic Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Email Signature</a></li>
+                <li><a href="#">Social Media Cover Page Design</a></li>
+                <li><a href="#">Domain Based Email Creation</a></li>
+                <li><a href="#">Other Email Creation</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Advertisement Page</a></li>
+                <li><a href="#">Landing Page Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Removing Background Passport Size Photo</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Interior Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Video & Editing </a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">SE0</a></li>
+                <li><a href="#">SEM</a></li>
+                <li><a href="#">SMM</a></li>
+                <li role="separator" class="divider"></li>
+                 <li><a href="#">Content Creation</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Website Developement</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CMS</a></li>
+                <li><a href="#">FrameWork</a></li>
+                <li><a href="#">Blogger</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Website Maintainenece</a></li>
+                <li><a href="#">Website Reconstrunction</a></li>
+                <li role="separator" class="divider"></li>
+              
+              
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Products <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Software</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Billing Software</a></li>
+                <li><a href="#">School Software</a></li>
+                 <li><a href="#">Retail Software</a></li>
+                <li><a href="#">Currior Software</a></li>
+                <li><a href="#">Office Software</a></li>
+                <li><a href="#">Showroom Software</a></li>
+              </ul>
+              <ul>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Pharmacy Software</a></li>
+                <li><a href="#">Hospital Software</a></li>
+                <li><a href="#">SuperMarket Software</a></li>
+                <li><a href="#">IVR Software</a></li>
+                <li><a href="#">HRM Software</a></li>
+                <li><a href="#">MLM Software</a></li>
+                <li><a href="#">Instiute Software</a></li>
+              </ul>
+            </div>
+          </li>
+<li><a href="#">Career</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact</a></li>
+ <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Techonology <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Larvel</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Angular</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Node</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Jquery</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Dotnet</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Talwind</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CSS3</a></li>
+              </ul>
+            </div>
+          </li>
+    <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Paid Advertisement <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Linkdin</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">FaceBook</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Jquery</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Dotnet</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Talwind</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CSS3</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+<!-- <ul class="nav navbar-nav navbar-right">
+          
+           <li> <a class="btn btn-outline-dark mr-2 btn-sm" data-toggle="modal" data-target="#loginModal"
+          href="">Log in</a></li>
+           <li><a class="btn btn-dark btn-sm" data-toggle="modal" data-target="#createModal" href="">Create</a></li>
+          
+      </ul>-->
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-toggle').click(function(){
+        var $dropdown = $(this).next('.dropdown-menu');
+        $('.dropdown-menu').not($dropdown).slideUp();  // Close all other dropdowns
+        $dropdown.slideToggle();  // Toggle the clicked dropdown
+      });
+
+      $(document).click(function(event) {
+        if (!$(event.target).closest('.dropdown').length) {
+          $('.dropdown-menu').slideUp();  // Close dropdowns if clicking outside
+        }
+      });
+    });
+  </script>
+  <!-- end header -->
+  <section class="post-wrapper-top">
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>Portfolio 2 Columns</li>
+        </ul>
+        <h2>PORTFOLIO 2 COLUMNS</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <!-- search -->
+        <div class="search-bar">
+          <form action="" method="get">
+            <fieldset>
+              <input type="image" src="img/pixel.gif" class="searchsubmit" alt="" />
+              <input type="text" class="search_text showtextback" name="s" id="s" value="Search..." />
+            </fieldset>
+          </form>
+        </div>
+        <!-- / end div .search-bar -->
+      </div>
+    </div>
+  </section>
+  <!-- end post-wrapper-top -->
+
+   
+
+<style>
+body { padding-top: 50px; }
+/*#####################
+Additional Styles (required)
+######################*/
+#myCarousel .thumbnail {
+    margin-bottom: 0;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+}
+.carousel-control {
+    color:#fff;
+    top:40%;
+    color:#428BCA;
+    bottom:auto;
+    padding-top:4px;
+    width:30px;
+    height:30px;
+    text-shadow:none;
+    opacity:1;
+}
+.carousel-control:hover {
+    color: #d9534f;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+}
+.carousel-control.right {
+    left:auto;
+    right:-32px;
+}
+.carousel-control.left {
+    right:auto;
+    left:-32px;
+}
+.carousel-indicators {
+    bottom:-30px;
+}
+.carousel-indicators li {
+    border-radius:0;
+    width:10px;
+    height:10px;
+    background:#ccc;
+    border:1px solid #ccc;
+}
+.carousel-indicators .active {
+    width:12px;
+    height:12px;
+    background:#3276b1;
+    border-color:#3276b1;
+}
+</style>
+<div class="container">
+	<div class="row">
+			<div class="well">
+            <!-- Carousel
+            ================================================== -->            
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7lveshFS285PnTG3YVk4nWRoYWsEJMVcGDpFid25e58xs7CxV5FG4D1RpBeHcOmLQaQlDaef5WCHlYQ4BKYlpewvVH6vo5EpUiPi4B1O5IYwUQ1ECDkJ6E1aIROT5T_6fj_nCmPwo5TNCD3LIsaircpA90qvOc9MvfmYP2SUW1MLLEAHCDRapy4-R8LNc/w640-h634/software_billing-removebg-preview.png" alt="Slide11">
+                                  <div class="caption">
+                                    <h5 align="center">GST Billing Software</h5>
+                                    <p align="justify">"Efficiently manage student tuition, fees, and payments with our comprehensive school billing software."</p>
+                                                        
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div>        
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghoS9fpPlcr9H1bUR_E6bumfpaEbEASnjCXfTS4zznu9Co4EIpA7Q5lo1Kb94wYi5TiAdoUkVsxsqfMh2RbiHuGduwSoeQdlbDBKvHQlqQh3SOGSPvGuoJPyy0JMOenrAquyt6vjJdkm77q4PJnWN3zt8vxonWhZyAQgXmEWLIqDUxfDSgeanYr0jLhtwR/w640-h358/Software_Currior-removebg-preview.png" alt="Slide12">
+                                  <div class="caption">
+                                    <h3 align="center">Currior Software</h3>
+                                    <p align="justify">"Optimize your delivery operations with our advanced courier software."</p>
+                                   
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoduUd25P4j0KVL_GE0y9WlqgPu-TqHPgsAJ6lWYDwQKyY6gdR92uDuj0QLlslfIoO3zeMu1fYe7VM_7O_uMY-dwpFh7pf0tHcgeCDFop3pV5uL3BoR-PuociJNm00m1IDG8cexDLNmfip9VPff2KSFniDs_1t3vYIVD5ycYJCO9hqYAh2elVemnjcaJ9o/w640-h374/software%20office.JPG" alt="Slide13">
+                                  <div class="caption">
+                                    <h3 align="center">Office Software</h3>
+                                    <p align="justify">"Enhance productivity and streamline workflow with our versatile office software, featuring robust tools for communication."</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPdXpg_0VQNx0kCSQzeGEeppmt2fvoDSjqeveZvV03Hr0y9RGTDmu0Pet9HxyaxsQlrP1PSA7PsKxqCwB1sIK4TuGVoqJ3NwvtT4E4TpHpBL4uBFeCJW9p8SH3P_LW6j6lHMcp_Z7f7m51JJDKihPyOU1DCpbPfhcpHyi18_i1PLXVxtPHFsj_xir-biBm/w640-h436/software%20retail.JPG" alt="Slide14">
+                                  <div class="caption">
+                                    <h3 align="center">Retail Software</h3>
+                                    <p align="justify">"Transform your retail operations with our all-in-one retail software, providing inventory management."</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrhaZMYPF9fjXEn16M5xo9YP1eq0NsdSvPY_iNYkS8gNqCbFy10vfoP9bg3xgB294NpF5MgFCuudS61dHa6D0vpMDgZHRFRgfsIKYX5WzhOevuj8xrXNAPZ4uZEMnIEeAB2aeUS8DyAYEeOQNlgUyRjyeUg_kf6uPcQTOMPY0aAxnRgNK9edAPWYcO5rXP/w576-h640/software%20school.JPG" alt="Slide21">
+                                  <div class="caption">
+                                    <h3 align="center">School Managment Software</h3>
+                                    <p align="justify">"Revolutionize your educational institution with our comprehensive School Management Software."</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div>        
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWwBAiki_yAdeVE0AJFm7sBkBWy6FGu59nPdC0KlGKkEZuwTMXdS1nBCelX1J8CH3zLCJcWk8aM9Kwf0uTVyWsqdB2eQjxBrT2oBG5itS7HgX_xasCX1SvdQaS8YoGQz-fDMvSx9D6UmJJu4s9vUhFDXTo8h60jlwepcw-DVGTVRd-HkbCuCPSo6m1EuL5/w640-h638/retail%20software.JPG" alt="Slide22">
+                                  <div class="caption">
+                                    <h3 align="center">ShowRoom Software</h3>
+                                    <p align="justify">Elevate your showroom operations with our state-of-the-art Showroom Software, offering seamless inventory management.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhibhdX54izoQjaB7A921SAaZHFsYLpNKyIu-nYvwzO04qokGfGAN-MNeMcNjKy7AZoXe_WCWUPGXhd1gYlT6mhnrl1gELKV6Jvy_4lVSP9q0Nx1metfYBZ9mk60-UoKq6U4PvuH6Eu-7d6hYqNuybug9noeQJT-QLjKfZXA6jE7X7Uj2P9GHnrvrr5AbJd/w640-h522/pharmacy%20sofware.JPG" alt="Slide23">
+                                  <div class="caption">
+                                    <h3>Pharmacy Management Software</h3>
+                                    <p>
+                                    "Streamline your pharmaceutical operations with our robust Pharmacy Management Software, featuring inventory control."</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO7887mTzvxaZ8VBoalocxnwPCYqm_YkCRtIQgjS6xWYUoDsFnRZlsrHeZPPbyajG0F0vVzHGAxbCcYAYa0Z5e7842tx02XJB_tAEVrR2RJereKL_8puBCAlJM88TA-7FrfJ38BOFRFMnRLuVPbBhDjQXF6HjVZjrrBDEmhKsxmMqfhV6trDcnO7mOylG6/w640-h482/super%20market%20billing.JPG" alt="Slide24">
+                                  <div class="caption">
+                                    <h3>SuperMarket Software</h3>
+                                    <p>"Enhance your grocery business with our advanced Supermarket Software."</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrRzUy_q-VgDK204EXKlabbjPb9tVlRNrKtRA1Tr3XeLUHBljPfLN9btN9yd_dtl4d0CgzPCGx_E5mddeVfiN5PFawX1IkTtDogxHnspiEcEbD9d4fDnoy40YxJenb3XwLRbcTD55s2YE6M-gAViq3shhcWBliV_lK4XcHZDOkDfXhcr75KEv7UG2N3tDC/s320/hospital%20management%20software.JPG" alt="Slide31">
+                                  <div class="caption">
+                                    <h3>Hospital Software</h3>
+                                    <p>It Integrates patient records, administrative tasks, and clinical workflows to optimize healthcare delivery and streamline operations within medical facilities.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div>        
+                            </div>
+                            <div class="col-md-3">w
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiang8JrtmC_ok4ibSyNQKUKBE_k9qLIKl46zG1f5nt_s5_3NnG9D6cF_JKnOIo3Vq2u6eCoCkE_njnyX5I-PnnsixoeanZEZNByoEcMCdKHFbCg7x_xPRMVJvLIRCcGmVYRQJRGWtGw8lXEb9CS7Osfz5Qm1FJSxuElYKut6yDYHOnBbvhkmpRKH6IybkM/w640-h406/Software%20IVR.JPG" alt="Slide32">
+                                  <div class="caption">
+                                    <h3>IVR Software</h3>
+                                    <p>Enables automated phone interactions through voice prompts and keypad inputs, enhancing customer service efficiency and routing callers to appropriate departments.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz1NY_2s2OcAv_3i15KfLEZYXXmoyYfM8hbKeQ1vgoNG7y3bXmeQk1DBDIhw4cwXSg9Bn_mRzVvhelBLiLv0yt5925PqI7R3XLYa2_GwCIL5gelEbJkVnrkOgpX9wUnMmg5b46B3hWKXF4dx8nBpR_J1nMEINBk_fFNUiEThLosN6SpuZsF3k0XPletQza/w640-h566/Software%20MLM%20.JPG" alt="Slide33">
+                                  <div class="caption">
+                                    <h3>MLM Software</h3>
+                                    <p>Facilitates multi-level marketing operations by managing sales, commissions, downline tracking, and network analytics.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKIMpxEsZy0QZLwgcteYrmVDxxGCW3oi2yxwBjCMYviz32vjyxJHuZ_x1LB6QU_cybXcfY6tZeAJGYr8KLK21ML-nkvOISt2O7hu-mkScxLnwamj8TIQWhRu6jO0EzqhuBMhDJZxwzeupcWOMlgnsdHTOWzkDmSEU1NQRcR-NwWsRDgwNVvCen_nSjd2w9/w630-h640/HRM%20Software.JPG" alt="Slide34">
+                                  <div class="caption">
+                                    <h3>HRM Software</h3>
+                                    <p>Human Resource Management (HRM) Software: Streamlines HR tasks such as recruitment, payroll, employee records.</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                  </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+                
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>                
+            </div><!-- End Carousel --> 
+        </div><!-- End Well -->
+    </div>
+</div>
+  <section class="section3">
+    <div class="container withpadding">
+      <div class="message">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <h3>Grab the attention of your customers!</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <a class="dmbutton button large pull-right" href="#"><i class="fa fa-download"></i> GET A QUOTE</a>
+        </div>
+      </div>
+      <!-- end message -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section3 -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">About us</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
+        <a class="button small" href="#">read more</a>
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Recent Posts</h4>
+        <ul class="recent_posts">
+          <li>
+            <a href="home1.html#">
+						<img src="img/recent_post_01.png" alt="" />Our New Dashboard Is Here</a>
+            <a class="readmore" href="#">read more</a>
+          </li>
+          <li>
+            <a href="home1.html#">
+						<img src="img/recent_post_02.png" alt="" />Design Is In The Air</a>
+            <a class="readmore" href="#">read more</a>
+          </li>
+        </ul>
+        <!-- recent posts -->
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Get In Touch</h4>
+        <ul class="contact_details">
+          <li><i class="fa fa-envelope-o"></i> info@yoursite.com</li>
+          <li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
+          <li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li>
+          <li><a href="#"><i class="fa fa-map-marker"></i> View large map</a></li>
+        </ul>
+        <!-- contact_details -->
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Flickr Stream</h4>
+        <ul class="flickr">
+          <li><a href="#"><img alt="" src="img/flickr_01.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_02.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_03.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_04.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_05.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_06.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_07.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_08.jpg"></a></li>
+        </ul>
+      </div>
+      <!-- end widget -->
+    </div>
+    <!-- end container -->
+
+    <div class="copyrights">
+      <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 columns footer-left">
+          <p>Copyright © 2014 - All rights reserved.</p>
+          <div class="credits">
+            <!--
+              You are NOT allowed to delete the credit link to TemplateMag with free version.
+              You can delete the credit link only if you bought the pro version.
+              Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/maxibiz-bootstrap-business-template/
+              Licensing information: https://templatemag.com/license/
+            -->
+            Created with MaxiBiz template by <a href="https://templatemag.com/">TemplateMag</a>
+          </div>
+        </div>
+        <!-- end widget -->
+        <div class="col-lg-6 col-md-6 col-sm-12 columns text-right">
+          <div class="footer-menu right">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Site Terms</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end large-6 -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+  </footer>
+  <!-- end footer -->
+  <div class="dmtop">Scroll to Top</div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+  <script src="lib/isotope/isotope.min.js"></script>
+  <script src="lib/hover/hoverdir.js"></script>
+  <script src="lib/hover/hoverex.min.js"></script>
+  <script src="lib/unveil-effects/unveil-effects.js"></script>
+  <script src="lib/owl-carousel/owl-carousel.js"></script>
+  <script src="lib/jetmenu/jetmenu.js"></script>
+  <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+  <script src="lib/jigowatt/jigowatt.js"></script>
+  <script src="lib/easypiechart/easypiechart.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
