@@ -500,30 +500,191 @@ socialShareButtons.forEach(function (button) {
     });
   </script>
   <!-- end header -->
-  <section class="post-wrapper-top">
-    <div class="container">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li>Portfolio 2 Columns</li>
-        </ul>
-        <h2>PORTFOLIO 2 COLUMNS</h2>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <!-- search -->
-        <div class="search-bar">
-          <form action="" method="get">
-            <fieldset>
-              <input type="image" src="img/pixel.gif" class="searchsubmit" alt="" />
-              <input type="text" class="search_text showtextback" name="s" id="s" value="Search..." />
-            </fieldset>
-          </form>
+<style>
+    /* General section styling */
+.custom-section {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px; /* Adjust based on your needs */
+}
+
+.custom-top-section {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-section-height-min-height {
+    min-height: 400px; /* Adjust based on your needs */
+}
+
+.custom-section-stretched {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -40vw;
+    margin-right: -10vw;
+}
+
+.custom-section-content-middle {
+    justify-content: center;
+}
+
+.custom-section-full_width {
+    width: 100%;
+}
+
+.custom-section-height-default {
+    height: auto;
+}
+
+.custom-section-items-middle {
+    align-items: center;
+}
+
+/* Background overlay */
+.custom-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: 1;
+}
+
+/* Column styling */
+.custom-column {
+    flex: 1;
+    min-width: 0;
+    padding: 20px; /* Adjust based on your needs */
+    position: relative;
+    box-sizing: border-box;
+}
+
+.custom-col-100 {
+    width: 100%;
+}
+
+.custom-top-column {
+    margin: 0;
+    padding: 0;
+}
+
+/* Widget wrapper */
+.custom-widget-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.custom-element-populated {
+    overflow: hidden;
+}
+
+/* Video widget */
+.custom-widget-video {
+    width: 100%;
+    position: relative;
+}
+
+.custom-widget-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hosted video styling */
+.e-hosted-video {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.custom-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.lazy.entered {
+    opacity: 1;
+}
+
+/* Adjust inline styles */
+.custom-section[style] {
+    width: 2500px;
+    left: -12px;
+}
+
+ </style>
+ <section
+    class="custom-section custom-top-section custom-element custom-element-9172ee1 custom-section-height-min-height custom-section-stretched custom-section-content-middle custom-section-full_width custom-section-height-default custom-section-items-middle"
+    data-id="9172ee1"
+    data-element_type="section"
+    data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'
+    style="width: 2500px; left: 2px;"
+>
+    <div class="custom-background-overlay two_custom_element"></div>
+    <div class="custom-container custom-column-gap-no two_custom_element">
+        <div class="custom-column custom-col-100 custom-top-column custom-element custom-element-7fdc1268 two_custom_element" data-id="7fdc1268" data-element_type="column">
+            <div class="custom-widget-wrap custom-element-populated two_custom_element">
+                <div
+                    class="custom-element custom-element-2c07ba0b custom-widget custom-widget-video two_custom_element"
+                    data-id="2c07ba0b"
+                    data-element_type="widget"
+                    data-settings='{"video_type":"hosted","autoplay":"yes","play_on_mobile":"yes","mute":"yes","loop":"yes"}'
+                    data-widget_type="video.default"
+                >
+                    <div class="custom-widget-container two_custom_element">
+                        <div class="e-hosted-video custom-wrapper custom-open-inline two_custom_element">
+                            <noscript class="two_custom_element">
+                                <video class="custom-video" src="https://origamicreative.com/wp-content/uploads/2023/04/portfolio-banner.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
+                            </noscript>
+                            <video
+                                class="lazy custom-video entered loaded two_custom_element"
+                                data-src="https://origamicreative.com/wp-content/uploads/2023/04/portfolio-banner.mp4"
+                                autoplay=""
+                                loop=""
+                                muted="muted"
+                                playsinline=""
+                                controlslist="nodownload"
+                                data-ll-status="loaded"
+                                src="https://origamicreative.com/wp-content/uploads/2023/04/portfolio-banner.mp4"
+                            ></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- / end div .search-bar -->
-      </div>
     </div>
-  </section>
-  <!-- end post-wrapper-top -->
+</section>
+
+<script>
+jQuery(document).ready(function($) {
+    $('.et_pb_slides').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        arrows: false
+    });
+});
+</script>
+
 
    
 
@@ -593,10 +754,10 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7lveshFS285PnTG3YVk4nWRoYWsEJMVcGDpFid25e58xs7CxV5FG4D1RpBeHcOmLQaQlDaef5WCHlYQ4BKYlpewvVH6vo5EpUiPi4B1O5IYwUQ1ECDkJ6E1aIROT5T_6fj_nCmPwo5TNCD3LIsaircpA90qvOc9MvfmYP2SUW1MLLEAHCDRapy4-R8LNc/w640-h634/software_billing-removebg-preview.png" alt="Slide11">
                                   <div class="caption">
-                                    <h5 align="center">GST Billing Software</h5>
+                                    <h5 align="center">GST Software</h5>
                                     <p align="justify">"Efficiently manage student tuition, fees, and payments with our comprehensive school billing software."</p>
                                                         
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p></a> <a href="SoftwareGST.html" class="btn btn-default" role="button" align="center">Order Now</a></p>
                                   </div>
                                 </div>        
                             </div>
@@ -604,10 +765,10 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghoS9fpPlcr9H1bUR_E6bumfpaEbEASnjCXfTS4zznu9Co4EIpA7Q5lo1Kb94wYi5TiAdoUkVsxsqfMh2RbiHuGduwSoeQdlbDBKvHQlqQh3SOGSPvGuoJPyy0JMOenrAquyt6vjJdkm77q4PJnWN3zt8vxonWhZyAQgXmEWLIqDUxfDSgeanYr0jLhtwR/w640-h358/Software_Currior-removebg-preview.png" alt="Slide12">
                                   <div class="caption">
-                                    <h3 align="center">Currior Software</h3>
+                                    <h5 align="center">Currior Software</h5>
                                     <p align="justify">"Optimize your delivery operations with our advanced courier software."</p>
                                    
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p></a> <a href="Software Currior.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -615,9 +776,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoduUd25P4j0KVL_GE0y9WlqgPu-TqHPgsAJ6lWYDwQKyY6gdR92uDuj0QLlslfIoO3zeMu1fYe7VM_7O_uMY-dwpFh7pf0tHcgeCDFop3pV5uL3BoR-PuociJNm00m1IDG8cexDLNmfip9VPff2KSFniDs_1t3vYIVD5ycYJCO9hqYAh2elVemnjcaJ9o/w640-h374/software%20office.JPG" alt="Slide13">
                                   <div class="caption">
-                                    <h3 align="center">Office Software</h3>
+                                    <h5 align="center">Office Software</h5>
                                     <p align="justify">"Enhance productivity and streamline workflow with our versatile office software, featuring robust tools for communication."</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p></a> <a href="Software office.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -625,9 +786,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPdXpg_0VQNx0kCSQzeGEeppmt2fvoDSjqeveZvV03Hr0y9RGTDmu0Pet9HxyaxsQlrP1PSA7PsKxqCwB1sIK4TuGVoqJ3NwvtT4E4TpHpBL4uBFeCJW9p8SH3P_LW6j6lHMcp_Z7f7m51JJDKihPyOU1DCpbPfhcpHyi18_i1PLXVxtPHFsj_xir-biBm/w640-h436/software%20retail.JPG" alt="Slide14">
                                   <div class="caption">
-                                    <h3 align="center">Retail Software</h3>
+                                    <h5 align="center">Retail Software</h5>
                                     <p align="justify">"Transform your retail operations with our all-in-one retail software, providing inventory management."</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p align="justify"></a> <a href="Software Retail.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -639,9 +800,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrhaZMYPF9fjXEn16M5xo9YP1eq0NsdSvPY_iNYkS8gNqCbFy10vfoP9bg3xgB294NpF5MgFCuudS61dHa6D0vpMDgZHRFRgfsIKYX5WzhOevuj8xrXNAPZ4uZEMnIEeAB2aeUS8DyAYEeOQNlgUyRjyeUg_kf6uPcQTOMPY0aAxnRgNK9edAPWYcO5rXP/w576-h640/software%20school.JPG" alt="Slide21">
                                   <div class="caption">
-                                    <h3 align="center">School Managment Software</h3>
+                                    <h5 align="center">School Software</h5>
                                     <p align="justify">"Revolutionize your educational institution with our comprehensive School Management Software."</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p align="justify"></a> <a href="software school .html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div>        
                             </div>
@@ -649,9 +810,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWwBAiki_yAdeVE0AJFm7sBkBWy6FGu59nPdC0KlGKkEZuwTMXdS1nBCelX1J8CH3zLCJcWk8aM9Kwf0uTVyWsqdB2eQjxBrT2oBG5itS7HgX_xasCX1SvdQaS8YoGQz-fDMvSx9D6UmJJu4s9vUhFDXTo8h60jlwepcw-DVGTVRd-HkbCuCPSo6m1EuL5/w640-h638/retail%20software.JPG" alt="Slide22">
                                   <div class="caption">
-                                    <h3 align="center">ShowRoom Software</h3>
+                                    <h5 align="center">ShowRoom Software</h5>
                                     <p align="justify">Elevate your showroom operations with our state-of-the-art Showroom Software, offering seamless inventory management.</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p align="justify"></a> <a href="software showroom.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div>
                             </div>
@@ -659,10 +820,10 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhibhdX54izoQjaB7A921SAaZHFsYLpNKyIu-nYvwzO04qokGfGAN-MNeMcNjKy7AZoXe_WCWUPGXhd1gYlT6mhnrl1gELKV6Jvy_4lVSP9q0Nx1metfYBZ9mk60-UoKq6U4PvuH6Eu-7d6hYqNuybug9noeQJT-QLjKfZXA6jE7X7Uj2P9GHnrvrr5AbJd/w640-h522/pharmacy%20sofware.JPG" alt="Slide23">
                                   <div class="caption">
-                                    <h3>Pharmacy Management Software</h3>
-                                    <p>
+                                    <h5 align="center">Pharmacy Software</h5>
+                                    <p align="justify">
                                     "Streamline your pharmaceutical operations with our robust Pharmacy Management Software, featuring inventory control."</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <p align="justify"></a> <a href="software pharmacy.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -670,9 +831,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO7887mTzvxaZ8VBoalocxnwPCYqm_YkCRtIQgjS6xWYUoDsFnRZlsrHeZPPbyajG0F0vVzHGAxbCcYAYa0Z5e7842tx02XJB_tAEVrR2RJereKL_8puBCAlJM88TA-7FrfJ38BOFRFMnRLuVPbBhDjQXF6HjVZjrrBDEmhKsxmMqfhV6trDcnO7mOylG6/w640-h482/super%20market%20billing.JPG" alt="Slide24">
                                   <div class="caption">
-                                    <h3>SuperMarket Software</h3>
-                                    <p>"Enhance your grocery business with our advanced Supermarket Software."</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <h5 align="center">SuperMarket Software</h3>
+                                    <p align="justify">"Enhance your grocery business with our advanced Supermarket Software."</p>
+                                    <p align="justify"></a> <a href="Software supermarket.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -684,9 +845,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrRzUy_q-VgDK204EXKlabbjPb9tVlRNrKtRA1Tr3XeLUHBljPfLN9btN9yd_dtl4d0CgzPCGx_E5mddeVfiN5PFawX1IkTtDogxHnspiEcEbD9d4fDnoy40YxJenb3XwLRbcTD55s2YE6M-gAViq3shhcWBliV_lK4XcHZDOkDfXhcr75KEv7UG2N3tDC/s320/hospital%20management%20software.JPG" alt="Slide31">
                                   <div class="caption">
-                                    <h3>Hospital Software</h3>
-                                    <p>It Integrates patient records, administrative tasks, and clinical workflows to optimize healthcare delivery and streamline operations within medical facilities.</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <h5>Hospital Software</h5>
+                                    <p align="justify">It Integrates patient records, administrative tasks, and clinical workflows to optimize healthcare delivery and streamline operations within medical facilities.</p>
+                                    <p></a> <a href="software hospital.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div>        
                             </div>
@@ -694,9 +855,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiang8JrtmC_ok4ibSyNQKUKBE_k9qLIKl46zG1f5nt_s5_3NnG9D6cF_JKnOIo3Vq2u6eCoCkE_njnyX5I-PnnsixoeanZEZNByoEcMCdKHFbCg7x_xPRMVJvLIRCcGmVYRQJRGWtGw8lXEb9CS7Osfz5Qm1FJSxuElYKut6yDYHOnBbvhkmpRKH6IybkM/w640-h406/Software%20IVR.JPG" alt="Slide32">
                                   <div class="caption">
-                                    <h3>IVR Software</h3>
-                                    <p>Enables automated phone interactions through voice prompts and keypad inputs, enhancing customer service efficiency and routing callers to appropriate departments.</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <h5>IVR Software</h5>
+                                    <p align="justify">Enables automated phone interactions through voice prompts and keypad inputs, enhancing customer service efficiency and routing callers to appropriate departments.</p>
+                                    <p></a> <a href="Software IVR .html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -704,9 +865,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz1NY_2s2OcAv_3i15KfLEZYXXmoyYfM8hbKeQ1vgoNG7y3bXmeQk1DBDIhw4cwXSg9Bn_mRzVvhelBLiLv0yt5925PqI7R3XLYa2_GwCIL5gelEbJkVnrkOgpX9wUnMmg5b46B3hWKXF4dx8nBpR_J1nMEINBk_fFNUiEThLosN6SpuZsF3k0XPletQza/w640-h566/Software%20MLM%20.JPG" alt="Slide33">
                                   <div class="caption">
-                                    <h3>MLM Software</h3>
-                                    <p>Facilitates multi-level marketing operations by managing sales, commissions, downline tracking, and network analytics.</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <h5>MLM Software</h5>
+                                    <p align="justify">Facilitates multi-level marketing operations by managing sales, commissions, downline tracking, and network analytics.</p>
+                                    <p></a> <a href="software MLM.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -714,9 +875,9 @@ Additional Styles (required)
                                 <div class="thumbnail">
                                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKIMpxEsZy0QZLwgcteYrmVDxxGCW3oi2yxwBjCMYviz32vjyxJHuZ_x1LB6QU_cybXcfY6tZeAJGYr8KLK21ML-nkvOISt2O7hu-mkScxLnwamj8TIQWhRu6jO0EzqhuBMhDJZxwzeupcWOMlgnsdHTOWzkDmSEU1NQRcR-NwWsRDgwNVvCen_nSjd2w9/w630-h640/HRM%20Software.JPG" alt="Slide34">
                                   <div class="caption">
-                                    <h3>HRM Software</h3>
-                                    <p>Human Resource Management (HRM) Software: Streamlines HR tasks such as recruitment, payroll, employee records.</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">12,99 €</a> <a href="#" class="btn btn-default" role="button">Order Now</a></p>
+                                    <h5>HRM Software</h5>
+                                    <p align="justify">Human Resource Management (HRM) Software: Streamlines HR tasks such as recruitment, payroll, employee records.</p>
+                                    <p></a> <a href="software HRM.html" class="btn btn-default" role="button">Order Now</a></p>
                                   </div>
                                 </div> 
                             </div>
@@ -735,108 +896,345 @@ Additional Styles (required)
         </div><!-- End Well -->
     </div>
 </div>
-  <section class="section3">
-    <div class="container withpadding">
-      <div class="message">
-        <div class="col-lg-9 col-md-9 col-sm-9">
-          <h3>Grab the attention of your customers!</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <a class="dmbutton button large pull-right" href="#"><i class="fa fa-download"></i> GET A QUOTE</a>
-        </div>
-      </div>
-      <!-- end message -->
-    </div>
-    <!-- end container -->
-  </section>
-  <!-- end section3 -->
+<style>
+   .bc-banner {
+      position:relative;
+      border:1px solid #ccc;
+      overflow:hidden;
+      background-color:#ff7a59;
+   }
+   .bc-banner a {
+      text-decoration:none;
+      color:#fff;
+   }
+   .bc-banner a:hover {
+      opacity:0.8;
+   }
+   .bc-banner-header {
+      background-color:#fff;
+      position:relative;
+      z-index:2;
+      padding:1rem;
+   }
+   
+   .bc-banner-body {
+      position:relative;
+      z-index:2;
+      padding:2rem;
+   }
+   .bc-banner .bc-banner-cover {
+      position:absolute;
+      opacity: 0.3;
+      filter: alpha(opacity=30); /* For IE8 and earlier */
+      object-fit: cover;
+      top:0;
+      z-index:1;
+      height: 100%;
+      width: 100%;
+   }
+   
+</style>
+<div class="bc-banner text-center">
+   <a href="http://hubs.to/ppTGS" onclick="ga('send', 'event', 'BC-banner', 'click', 'hubspot marketing signup');">
+   
+   <div class="bc-banner-body">
+      <h2>Start Collecting More Leads in Minutes</h2> 
+      <p>With HubSpot Marketing Free, you'll have everything you need to convert more visitors into leads. You'll be up and running in just minutes.</p>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">About us</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
-        <a class="button small" href="#">read more</a>
-      </div>
-      <!-- end widget -->
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">Recent Posts</h4>
-        <ul class="recent_posts">
-          <li>
-            <a href="home1.html#">
-						<img src="img/recent_post_01.png" alt="" />Our New Dashboard Is Here</a>
-            <a class="readmore" href="#">read more</a>
-          </li>
-          <li>
-            <a href="home1.html#">
-						<img src="img/recent_post_02.png" alt="" />Design Is In The Air</a>
-            <a class="readmore" href="#">read more</a>
-          </li>
-        </ul>
-        <!-- recent posts -->
-      </div>
-      <!-- end widget -->
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">Get In Touch</h4>
-        <ul class="contact_details">
-          <li><i class="fa fa-envelope-o"></i> info@yoursite.com</li>
-          <li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
-          <li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li>
-          <li><a href="#"><i class="fa fa-map-marker"></i> View large map</a></li>
-        </ul>
-        <!-- contact_details -->
-      </div>
-      <!-- end widget -->
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">Flickr Stream</h4>
-        <ul class="flickr">
-          <li><a href="#"><img alt="" src="img/flickr_01.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_02.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_03.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_04.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_05.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_06.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_07.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_08.jpg"></a></li>
-        </ul>
-      </div>
-      <!-- end widget -->
-    </div>
-    <!-- end container -->
+      <span class="btn btn-primary">Sign Up For Free</span>
+       
+   </div>
+      
+<img src="https://www.hubspot.com/hs-fs/hubfs/lead-capture-3-1.jpg?width=1800&name=lead-capture-3-1.jpg" alt="HubSpot Marketing Free" class="bc-banner-cover img-responsive">
+      
+      
+      </a>
+</div>
+<script>
+        document.getElementById('adVideo').addEventListener('ended', function() {
+            alert('The ad has ended!');
+        });
+    </script>
 
-    <div class="copyrights">
-      <div class="container">
-        <div class="col-lg-6 col-md-6 col-sm-12 columns footer-left">
-          <p>Copyright © 2014 - All rights reserved.</p>
-          <div class="credits">
-            <!--
-              You are NOT allowed to delete the credit link to TemplateMag with free version.
-              You can delete the credit link only if you bought the pro version.
-              Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/maxibiz-bootstrap-business-template/
-              Licensing information: https://templatemag.com/license/
-            -->
-            Created with MaxiBiz template by <a href="https://templatemag.com/">TemplateMag</a>
-          </div>
+
+   <style>
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background:#D3D3D3;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #FF1493 ;
+}
+.single-cta i {
+  color: #FF1493;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #FF1493;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #FF1493;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #000000;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #D3D3D3;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #D3D3D3;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #000000;
+}
+.twitter-bg{
+  background: #000000;
+}
+.google-bg{
+  background: #000000;
+}
+.footer-widget-heading h3 {
+  color: #D3D3D3;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #000000;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #000000;
+}
+.footer-widget ul li a {
+  color: #000000;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #000000;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #D3D3D3;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #D3D3D3;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #D3D3D3;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+}
+.copyright-text p a{
+  color: #000000;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #000000;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #000000;
+}
+ </style>
+  <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                           
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/logo-removebg-preview1.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <!----<div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>--->
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            
+                                <h5>Information</h5>
+                             
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            
+                                <h5>Resources</h5>
+                            
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- end widget -->
-        <div class="col-lg-6 col-md-6 col-sm-12 columns text-right">
-          <div class="footer-menu right">
-            <ul class="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Site Terms</a></li>
-              <li><a href="contact">Contact</a></li>
-            </ul>
-          </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2013, All Right Reserved <a href="https://codepen.io/anupkumar92/">Kwaga Ltd</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- end large-6 -->
-      </div>
-      <!-- end container -->
-    </div>
-    <!-- end copyrights -->
-  </footer>
+    </footer>
   <!-- end footer -->
   <div class="dmtop">Scroll to Top</div>
 
