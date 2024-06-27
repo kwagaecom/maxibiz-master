@@ -929,93 +929,278 @@ $(document).ready(function() {
             alert('The ad has ended!');
         });
     </script>
+ <style>
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+ </style>
+  <footer class="footer-section">
+
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            
+                            <div class="cta-text">
+                                <i class="fas fa-map-marker-alt"></i>
+
+                                <span>Patna,Bihar 804051</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                           
+                            <div class="cta-text">
+                                <i class="fas fa-phone"></i>
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">About us</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
-        <a class="button small" href="#">read more</a>
-      </div>
-      <!-- end widget -->
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">Recent Posts</h4>
-        <ul class="recent_posts">
-          <li>
-            <a href="home1.html#">
-            <img src="img/recent_post_01.png" alt="" />Our New Dashboard Is Here</a>
-            <a class="readmore" href="#">read more</a>
-          </li>
-          <li>
-            <a href="home1.html#">
-            <img src="img/recent_post_02.png" alt="" />Design Is In The Air</a>
-            <a class="readmore" href="#">read more</a>
-          </li>
-        </ul>
-        <!-- recent posts -->
-      </div>
-      <!-- end widget -->
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">Get In Touch</h4>
-        <ul class="contact_details">
-          <li><i class="fa fa-envelope-o"></i> info@yoursite.com</li>
-          <li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
-          <li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li>
-          <li><a href="#"><i class="fa fa-map-marker"></i> View large map</a></li>
-        </ul>
-        <!-- contact_details -->
-      </div>
-      <!-- end widget -->
-      <div class="widget col-lg-3 col-md-3 col-sm-12">
-        <h4 class="title">Flickr Stream</h4>
-        <ul class="flickr">
-          <li><a href="#"><img alt="" src="img/flickr_01.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_02.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_03.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_04.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_05.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_06.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_07.jpg"></a></li>
-          <li><a href="#"><img alt="" src="img/flickr_08.jpg"></a></li>
-        </ul>
-      </div>
-      <!-- end widget -->
-    </div>
-    <!-- end container -->
-
-    <div class="copyrights">
-      <div class="container">
-        <div class="col-lg-6 col-md-6 col-sm-12 columns footer-left">
-          <p>Copyright © 2014 - All rights reserved.</p>
-          <div class="credits">
-            <!--
-              You are NOT allowed to delete the credit link to TemplateMag with free version.
-              You can delete the credit link only if you bought the pro version.
-              Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/maxibiz-bootstrap-business-template/
-              Licensing information: https://templatemag.com/license/
-            -->
-            Created with MaxiBiz template by <a href="https://templatemag.com/">TemplateMag</a>
-          </div>
+                                <span>7838090428</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            
+                            <div class="cta-text">
+                                <i class="fas fa-envelope"></i>
+                                <span>service@kwaga.ltd</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/logo-removebg-preview1.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p align="justify">"Transforming visions into seamless digital experiences, Kwaga’s web developers craft intuitive and robust websites tailored to your needs."</p>
+                            </div>
+                            <!----<div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-linkdin-bg"></i></a>
+                            </div>--->
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Information</h3>
+                            </div>
+                            <ul>
+                            
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="service-design.html">services</a></li>
+                                <li><a href="portfolio.html">portfolio</a></li>
+                                <li><a href="appointement.html">Appointement</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Resources</h3>
+                            </div>
+                            <ul>
+                                <li><a href="software products.html">Products</a></li>
+                                <li><a href="technology-detail.html">Technology</a></li>
+                                <li><a href="carieer.html">Career</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- end widget -->
-        <div class="col-lg-6 col-md-6 col-sm-12 columns text-right">
-          <div class="footer-menu right">
-            <ul class="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Site Terms</a></li>
-              <li><a href="contact">Contact</a></li>
-            </ul>
-          </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2013, All Right Reserved <a href="https://codepen.io/anupkumar92/">Kwaga Ltd</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                
+                                <li><a href="Terms of Service.html">Terms</a></li>
+                                <li><a href="privacy policy.html">Privacy</a></li>
+                                <li><a href="cookies policy.html">Cookies Policy</a></li>
+                               <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- end large-6 -->
-      </div>
-      <!-- end container -->
-    </div>
-    <!-- end copyrights -->
-  </footer>
+    </footer>
   <!-- end footer -->
   <div class="dmtop">Scroll to Top</div>
 
