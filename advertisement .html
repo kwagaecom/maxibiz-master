@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MaxiBiz Bootstrap Business Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
+  <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors/blue.css">
+
+  <!-- =======================================================
+    Template Name: MaxiBiz
+    Template URL: https://templatemag.com/maxibiz-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+   <style>
+.social-share {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.social-share a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-share a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-share a svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+  vertical-align: middle;
+}
+
+.social-share a.facebook svg {
+  fill: #3b5998;
+}
+
+.social-share a.whatsapp svg {
+  fill: #25d366;
+}
+
+.social-share a.pinterest svg {
+  fill: #bd081c;
+}
+
+.social-share a.linkedin svg {
+  fill: #0077b5;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-share {
+    display: none;
+  }
+}
+
+/* Media Queries Shift Media Solutions| SMS */
+
+@media only screen and (max-width: 1080px) {
+  .body {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+  </style>
+
+
+  <div class="social-share">
+
+    <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.05,0H3.95A3.952,3.952,0,0,0,0,3.95V20.05A3.952,3.952,0,0,0,3.95,24H12.63V14.71H9.62v-3H12.63v-1.5c0-3.6,2.2-5.55,5.38-5.55a28.475,28.475,0,0,1,3.18.16v3L18.79,9c-1.7,0-2,.81-2,1.95v1.5h4.05l-.53,3.05H16.8V24H20.05A3.952,3.952,0,0,0,24,20.05V3.95A3.952,3.952,0,0,0,20.05,0Z" />
+      </svg>
+    </a>
+
+    <a href="#" class="whatsapp"><svg viewBox="0 0 64 64">
+        <path d="M6.9,48.4c-0.4,1.5-0.8,3.3-1.3,5.2c-0.7,2.9,1.9,5.6,4.8,4.8l5.1-1.3c1.7-0.4,3.5-0.2,5.1,0.5 c4.7,2.1,10,3,15.6,2.1c12.3-1.9,22-11.9,23.5-24.2C62,17.3,46.7,2,28.5,4.2C16.2,5.7,6.2,15.5,4.3,27.8c-0.8,5.6,0,10.9,2.1,15.6 C7.1,44.9,7.3,46.7,6.9,48.4z M21.3,19.8c0.6-0.5,1.4-0.9,1.8-0.9s2.3-0.2,2.9,1.2c0.6,1.4,2,4.7,2.1,5.1c0.2,0.3,0.3,0.7,0.1,1.2 c-0.2,0.5-0.3,0.7-0.7,1.1c-0.3,0.4-0.7,0.9-1,1.2c-0.3,0.3-0.7,0.7-0.3,1.4c0.4,0.7,1.8,2.9,3.8,4.7c2.6,2.3,4.9,3,5.5,3.4 c0.7,0.3,1.1,0.3,1.5-0.2c0.4-0.5,1.7-2,2.2-2.7c0.5-0.7,0.9-0.6,1.6-0.3c0.6,0.2,4,1.9,4.7,2.2c0.7,0.3,1.1,0.5,1.3,0.8 c0.2,0.3,0.2,1.7-0.4,3.2c-0.6,1.6-2.1,3.1-3.2,3.5c-1.3,0.5-2.8,0.7-9.3-1.9c-7-2.8-11.8-9.8-12.1-10.3c-0.3-0.5-2.8-3.7-2.8-7.1 C18.9,22.1,20.7,20.4,21.3,19.8z"></path>
+      </svg></a>
+
+    <a href="#" class="pinterest"><svg viewBox="0 0 64 64">
+        <path d="M14.4,53.8c2.4,2,6.1,0.6,6.8-2.4l0-0.1c0.4-1.8,2.4-10.2,3.2-13.7c0.2-0.9,0.2-1.8-0.1-2.7 C24.2,34,24,32.8,24,31.5c0-4.1,2.4-7.2,5.4-7.2c2.5,0,3.8,1.9,3.8,4.2c0,2.6-1.6,6.4-2.5,9.9c-0.7,3,1.5,5.4,4.4,5.4 c5.3,0,8.9-6.8,8.9-14.9c0-6.1-4.1-10.7-11.6-10.7c-8.5,0-13.8,6.3-13.8,13.4c0,2.4,0.7,4.2,1.8,5.5c0.5,0.6,0.6,0.9,0.4,1.6 c-0.1,0.5-0.4,1.8-0.6,2.2c-0.2,0.7-0.8,1-1.4,0.7c-3.9-1.6-5.7-5.9-5.7-10.7c0-8,6.7-17.5,20-17.5c10.7,0,17.7,7.7,17.7,16 c0,11-6.1,19.2-15.1,19.2c-1.9,0-3.8-0.7-5.2-1.6c-0.9-0.6-2.1-0.1-2.4,0.9c-0.5,1.9-1.1,4.3-1.3,4.9c-0.1,0.5-0.3,0.9-0.4,1.4 c-1,2.7,0.9,5.5,3.7,5.7c2.1,0.1,4.2,0,6.3-0.3c12.4-2,22.1-12.2,23.4-24.7C61.5,18.1,48.4,4,32,4C16.5,4,4,16.5,4,32 C4,40.8,8.1,48.6,14.4,53.8z"></path>
+      </svg></a>
+
+    <a href="#" class="linkedin"><svg viewBox="0 0 64 64">
+        <path d="M8,54.7C8,55.4,8.6,56,9.3,56h9.3c0.7,0,1.3-0.6,1.3-1.3V23.9c0-0.7-0.6-1.3-1.3-1.3H9.3 c-0.7,0-1.3,0.6-1.3,1.3V54.7z"></path>
+        <path d="M46.6,22.3c-4.5,0-7.7,1.8-9.4,3.7c-0.4,0.4-1.1,0.1-1.1-0.5l0-1.6c0-0.7-0.6-1.3-1.3-1.3h-9.4 c-0.7,0-1.3,0.6-1.3,1.3c0.1,5.7,0,25.4,0,30.7c0,0.7,0.6,1.3,1.3,1.3h9.5c0.7,0,1.3-0.6,1.3-1.3V37.9c0-1,0-2,0.3-2.7 c0.8-2,2.6-4.1,5.7-4.1c4.1,0,6,3.1,6,7.6v15.9c0,0.7,0.6,1.3,1.3,1.3h9.3c0.7,0,1.3-0.6,1.3-1.3V37.4C60,27.1,54.1,22.3,46.6,22.3 z"></path>
+        <path d="M13.9,18.9L13.9,18.9c3.8,0,6.1-2.4,6.1-5.4C19.9,10.3,17.7,8,14,8c-3.7,0-6,2.3-6,5.4 C8,16.5,10.3,18.9,13.9,18.9z"></path>
+      </svg></a>
+
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js">
+var socialShareButtons = document.querySelectorAll(".social-share a");
+
+function shareOnFacebook() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.facebook.com/?u=" +
+    encodeURIComponent(url) +
+    "&t=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnWhatsApp() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl = "https://wa.me/?text=" + encodeURIComponent(title + " " + url);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnPinterest() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.pinterest.com/pin/create/button/?url=" +
+    encodeURIComponent(url) +
+    "&media=&description=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnLinkedIn() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+    encodeURIComponent(url) +
+    "&title=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+socialShareButtons.forEach(function (button) {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    var shareType = this.classList[0];
+    switch (shareType) {
+      case "facebook":
+        shareOnFacebook();
+        break;
+      case "whatsapp":
+        shareOnWhatsApp();
+        break;
+      case "pinterest":
+        shareOnPinterest();
+        break;
+      case "linkedin":
+        shareOnLinkedIn();
+        break;
+    }
+  });
+});
+
+  </script>
+ <style>
+    body {
+      margin: 15px;
+    }
+
+    .dropdown-menu > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown-menu > ul > li > a {
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: 400;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    @media(min-width:992px) {
+      .nav > li {
+        position: initial;
+      }
+      .open > .dropdown-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 60px 0 0 0;
+      }
+      .dropdown-menu > ul {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+      }
+      .dropdown-menu > ul + ul {
+        border-left: 1px solid #e5e5e5;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar-header {
+        float: none;
+      }
+      .navbar-left,
+      .navbar-right {
+        float: none !important;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+      .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+        display: none!important;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+      }
+      .navbar-nav > li {
+        float: none;
+      }
+      .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collapse.in {
+        display: block !important;
+      }
+      .dropdown-menu {
+        position: relative;
+        width: 100%;
+        float: left;
+      }
+      .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+.nav-item.active {
+    color: #fff; /* White text */
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); /* Gradient background */
+    padding: 1px;
+    border-radius: 1px;
+}
+
+
+  </style>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" class="nav-item active" href="#">Kwaga Ltd</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="about 2.html">About Us <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Portfolio</a></li>
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Card Design</a></li>
+                <li><a href="#">Brouchure Design</a></li>
+                <li><a href="#">Pamplet Design</a></li>
+                <li><a href="#">Handbill Design</a></li>
+                <li><a href="#">Catlogue Design</a></li>
+                <li><a href="#">Flex banner Design</a></li>
+                <li><a href="#">Bill book Design</a></li>
+                <li><a href="#">Latherhead Design</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Graphic Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Email Signature</a></li>
+                <li><a href="#">Social Media Cover Page Design</a></li>
+                <li><a href="#">Domain Based Email Creation</a></li>
+                <li><a href="#">Other Email Creation</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Advertisement Page</a></li>
+                <li><a href="#">Landing Page Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Removing Background Passport Size Photo</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Interior Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Video & Editing </a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">SE0</a></li>
+                <li><a href="#">SEM</a></li>
+                <li><a href="#">SMM</a></li>
+                <li role="separator" class="divider"></li>
+                 <li><a href="#">Content Creation</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Website Developement</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CMS</a></li>
+                <li><a href="#">FrameWork</a></li>
+                <li><a href="#">Blogger</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Website Maintainenece</a></li>
+                <li><a href="#">Website Reconstrunction</a></li>
+                <li role="separator" class="divider"></li>
+              
+              
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Products <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Software</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Billing Software</a></li>
+                <li><a href="#">School Software</a></li>
+                 <li><a href="#">Retail Software</a></li>
+                <li><a href="#">Currior Software</a></li>
+                <li><a href="#">Office Software</a></li>
+                <li><a href="#">Showroom Software</a></li>
+              </ul>
+              <ul>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Pharmacy Software</a></li>
+                <li><a href="#">Hospital Software</a></li>
+                <li><a href="#">SuperMarket Software</a></li>
+                <li><a href="#">IVR Software</a></li>
+                <li><a href="#">HRM Software</a></li>
+                <li><a href="#">MLM Software</a></li>
+                <li><a href="#">Instiute Software</a></li>
+              </ul>
+            </div>
+          </li>
+<li><a href="#">Career</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact</a></li>
+ <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Techonology <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Larvel</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Angular</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Node</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Jquery</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Dotnet</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Talwind</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CSS3</a></li>
+              </ul>
+            </div>
+          </li>
+    <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Paid Advertisement <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Linkdin</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">FaceBook</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Jquery</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Dotnet</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Talwind</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CSS3</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+<!-- <ul class="nav navbar-nav navbar-right">
+          
+           <li> <a class="btn btn-outline-dark mr-2 btn-sm" data-toggle="modal" data-target="#loginModal"
+          href="">Log in</a></li>
+           <li><a class="btn btn-dark btn-sm" data-toggle="modal" data-target="#createModal" href="">Create</a></li>
+          
+      </ul>-->
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-toggle').click(function(){
+        var $dropdown = $(this).next('.dropdown-menu');
+        $('.dropdown-menu').not($dropdown).slideUp();  // Close all other dropdowns
+        $dropdown.slideToggle();  // Toggle the clicked dropdown
+      });
+
+      $(document).click(function(event) {
+        if (!$(event.target).closest('.dropdown').length) {
+          $('.dropdown-menu').slideUp();  // Close dropdowns if clicking outside
+        }
+      });
+    });
+  </script>
+  <!-- end header -->
+
+<style>
+/* MY TEMPLATE */
+* {
+	/* Outline to view layout on screen while styling | Remove after styling */
+	/* outline: 1px dashed #ff0075; */
+	margin: 0;
+	padding: 0;
+}
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+</style>
+<div class="jumbotron jumbotron-fluid bg-info text-white text-center">
+		<div class="container">
+			<h1 class="display-1">Welcome to Kwaga Ad Service</h1>
+			
+		</div>
+	</div>
+
+	<div class="container text-muted">
+		<!-- Cards -->
+		<div class="row" align="center">
+			<div class="col-md-6 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1598618826732-fb2fdf367775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdvb2dsZSUyMGFkJTIwc2VydmljZXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+					<div class="card-body">
+						<h3 class="card-title">Digital Ad Service</h3>
+						<p class="card-text">
+							Google Ads,Bing Ads,Sponsored Content
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://plus.unsplash.com/premium_photo-1681883457631-e21611e38757?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvY2lhbCUyMG1lZGlhJTIwJTIwQWQlMjBTZXJ2aWNlfGVufDB8fDB8fHww" alt="" />
+					<div class="card-body">
+						<h3 class="card-title">Social Media Ad Service</h3>
+						<p class="card-text">
+							YouTube Ads,Bing Ads,Sponsored Content,FaceBook Ads,Twiiter Ads,Pinterest Ads
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VFYlMjBBZCUyMFNlcnZpY2V8ZW58MHx8MHx8fDA%3D" alt="" />
+					<div class="card-body">
+						<h3 class="card-title">Direct Ad Service</h3>
+						<p class="card-text">
+							TV Ads,Radio Ads
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="card">
+					<img class="card-img-top img-fluid" src="https://plus.unsplash.com/premium_photo-1661508311240-76d4f2ad4a32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGVsZW1hcmtldGluZyUyMCUyMEFkJTIwU2VydmljZXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+					<div class="card-body">,Pi
+						<h3 class="card-title">Tradational Ad Service</h3>
+						<p class="card-text">
+							Telemarketing Ads ,Posters
+						</p>
+					</div>
+				</div>
+			
+		</div>
+
+		</div>
+
+		
+
+	<!-- Optional JavaScript -->
+	<script>
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ <style>
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+ </style>
+  <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                           
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/logo-removebg-preview1.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <!----<div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>--->
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Information</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Resources</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2013, All Right Reserved <a href="https://codepen.io/anupkumar92/">Kwaga Ltd</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- end footer -->
+  <div class="dmtop">Scroll to Top</div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+  <script src="lib/isotope/isotope.min.js"></script>
+  <script src="lib/hover/hoverdir.js"></script>
+  <script src="lib/hover/hoverex.min.js"></script>
+  <script src="lib/unveil-effects/unveil-effects.js"></script>
+  <script src="lib/owl-carousel/owl-carousel.js"></script>
+  <script src="lib/jetmenu/jetmenu.js"></script>
+  <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+  <script src="lib/jigowatt/jigowatt.js"></script>
+  <script src="lib/easypiechart/easypiechart.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
