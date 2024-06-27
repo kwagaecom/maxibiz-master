@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kwaga ltd</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
+  <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors/blue.css">
+
+  <!-- =======================================================
+    Template Name: MaxiBiz
+    Template URL: https://templatemag.com/maxibiz-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+ <style>
+.social-share {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.social-share a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-share a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-share a svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+  vertical-align: middle;
+}
+
+.social-share a.facebook svg {
+  fill: #3b5998;
+}
+
+.social-share a.whatsapp svg {
+  fill: #25d366;
+}
+
+.social-share a.pinterest svg {
+  fill: #bd081c;
+}
+
+.social-share a.linkedin svg {
+  fill: #0077b5;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-share {
+    display: none;
+  }
+}
+
+/* Media Queries Shift Media Solutions| SMS */
+
+@media only screen and (max-width: 1080px) {
+  .body {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+  </style>
+
+
+  <div class="social-share">
+
+    <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.05,0H3.95A3.952,3.952,0,0,0,0,3.95V20.05A3.952,3.952,0,0,0,3.95,24H12.63V14.71H9.62v-3H12.63v-1.5c0-3.6,2.2-5.55,5.38-5.55a28.475,28.475,0,0,1,3.18.16v3L18.79,9c-1.7,0-2,.81-2,1.95v1.5h4.05l-.53,3.05H16.8V24H20.05A3.952,3.952,0,0,0,24,20.05V3.95A3.952,3.952,0,0,0,20.05,0Z" />
+      </svg>
+    </a>
+
+    <a href="#" class="whatsapp"><svg viewBox="0 0 64 64">
+        <path d="M6.9,48.4c-0.4,1.5-0.8,3.3-1.3,5.2c-0.7,2.9,1.9,5.6,4.8,4.8l5.1-1.3c1.7-0.4,3.5-0.2,5.1,0.5 c4.7,2.1,10,3,15.6,2.1c12.3-1.9,22-11.9,23.5-24.2C62,17.3,46.7,2,28.5,4.2C16.2,5.7,6.2,15.5,4.3,27.8c-0.8,5.6,0,10.9,2.1,15.6 C7.1,44.9,7.3,46.7,6.9,48.4z M21.3,19.8c0.6-0.5,1.4-0.9,1.8-0.9s2.3-0.2,2.9,1.2c0.6,1.4,2,4.7,2.1,5.1c0.2,0.3,0.3,0.7,0.1,1.2 c-0.2,0.5-0.3,0.7-0.7,1.1c-0.3,0.4-0.7,0.9-1,1.2c-0.3,0.3-0.7,0.7-0.3,1.4c0.4,0.7,1.8,2.9,3.8,4.7c2.6,2.3,4.9,3,5.5,3.4 c0.7,0.3,1.1,0.3,1.5-0.2c0.4-0.5,1.7-2,2.2-2.7c0.5-0.7,0.9-0.6,1.6-0.3c0.6,0.2,4,1.9,4.7,2.2c0.7,0.3,1.1,0.5,1.3,0.8 c0.2,0.3,0.2,1.7-0.4,3.2c-0.6,1.6-2.1,3.1-3.2,3.5c-1.3,0.5-2.8,0.7-9.3-1.9c-7-2.8-11.8-9.8-12.1-10.3c-0.3-0.5-2.8-3.7-2.8-7.1 C18.9,22.1,20.7,20.4,21.3,19.8z"></path>
+      </svg></a>
+
+    <a href="#" class="pinterest"><svg viewBox="0 0 64 64">
+        <path d="M14.4,53.8c2.4,2,6.1,0.6,6.8-2.4l0-0.1c0.4-1.8,2.4-10.2,3.2-13.7c0.2-0.9,0.2-1.8-0.1-2.7 C24.2,34,24,32.8,24,31.5c0-4.1,2.4-7.2,5.4-7.2c2.5,0,3.8,1.9,3.8,4.2c0,2.6-1.6,6.4-2.5,9.9c-0.7,3,1.5,5.4,4.4,5.4 c5.3,0,8.9-6.8,8.9-14.9c0-6.1-4.1-10.7-11.6-10.7c-8.5,0-13.8,6.3-13.8,13.4c0,2.4,0.7,4.2,1.8,5.5c0.5,0.6,0.6,0.9,0.4,1.6 c-0.1,0.5-0.4,1.8-0.6,2.2c-0.2,0.7-0.8,1-1.4,0.7c-3.9-1.6-5.7-5.9-5.7-10.7c0-8,6.7-17.5,20-17.5c10.7,0,17.7,7.7,17.7,16 c0,11-6.1,19.2-15.1,19.2c-1.9,0-3.8-0.7-5.2-1.6c-0.9-0.6-2.1-0.1-2.4,0.9c-0.5,1.9-1.1,4.3-1.3,4.9c-0.1,0.5-0.3,0.9-0.4,1.4 c-1,2.7,0.9,5.5,3.7,5.7c2.1,0.1,4.2,0,6.3-0.3c12.4-2,22.1-12.2,23.4-24.7C61.5,18.1,48.4,4,32,4C16.5,4,4,16.5,4,32 C4,40.8,8.1,48.6,14.4,53.8z"></path>
+      </svg></a>
+
+    <a href="#" class="linkedin"><svg viewBox="0 0 64 64">
+        <path d="M8,54.7C8,55.4,8.6,56,9.3,56h9.3c0.7,0,1.3-0.6,1.3-1.3V23.9c0-0.7-0.6-1.3-1.3-1.3H9.3 c-0.7,0-1.3,0.6-1.3,1.3V54.7z"></path>
+        <path d="M46.6,22.3c-4.5,0-7.7,1.8-9.4,3.7c-0.4,0.4-1.1,0.1-1.1-0.5l0-1.6c0-0.7-0.6-1.3-1.3-1.3h-9.4 c-0.7,0-1.3,0.6-1.3,1.3c0.1,5.7,0,25.4,0,30.7c0,0.7,0.6,1.3,1.3,1.3h9.5c0.7,0,1.3-0.6,1.3-1.3V37.9c0-1,0-2,0.3-2.7 c0.8-2,2.6-4.1,5.7-4.1c4.1,0,6,3.1,6,7.6v15.9c0,0.7,0.6,1.3,1.3,1.3h9.3c0.7,0,1.3-0.6,1.3-1.3V37.4C60,27.1,54.1,22.3,46.6,22.3 z"></path>
+        <path d="M13.9,18.9L13.9,18.9c3.8,0,6.1-2.4,6.1-5.4C19.9,10.3,17.7,8,14,8c-3.7,0-6,2.3-6,5.4 C8,16.5,10.3,18.9,13.9,18.9z"></path>
+      </svg></a>
+
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js">
+var socialShareButtons = document.querySelectorAll(".social-share a");
+
+function shareOnFacebook() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.facebook.com/?u=" +
+    encodeURIComponent(url) +
+    "&t=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnWhatsApp() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl = "https://wa.me/?text=" + encodeURIComponent(title + " " + url);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnPinterest() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.pinterest.com/pin/create/button/?url=" +
+    encodeURIComponent(url) +
+    "&media=&description=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+function shareOnLinkedIn() {
+  var title = document.title;
+  var url = window.location.href;
+  var shareUrl =
+    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+    encodeURIComponent(url) +
+    "&title=" +
+    encodeURIComponent(title);
+  window.open(
+    shareUrl,
+    "",
+    "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+  );
+}
+
+socialShareButtons.forEach(function (button) {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    var shareType = this.classList[0];
+    switch (shareType) {
+      case "facebook":
+        shareOnFacebook();
+        break;
+      case "whatsapp":
+        shareOnWhatsApp();
+        break;
+      case "pinterest":
+        shareOnPinterest();
+        break;
+      case "linkedin":
+        shareOnLinkedIn();
+        break;
+    }
+  });
+});
+
+  </script>
+
+  <style>
+    body {
+      margin: 15px;
+    }
+
+    .dropdown-menu > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown-menu > ul > li > a {
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: 400;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    @media(min-width:992px) {
+      .nav > li {
+        position: initial;
+      }
+      .open > .dropdown-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 60px 0 0 0;
+      }
+      .dropdown-menu > ul {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+      }
+      .dropdown-menu > ul + ul {
+        border-left: 1px solid #e5e5e5;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar-header {
+        float: none;
+      }
+      .navbar-left,
+      .navbar-right {
+        float: none !important;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+      .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+        display: none!important;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+      }
+      .navbar-nav > li {
+        float: none;
+      }
+      .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collapse.in {
+        display: block !important;
+      }
+      .dropdown-menu {
+        position: relative;
+        width: 100%;
+        float: left;
+      }
+      .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+.nav-item.active {
+    color: #fff; /* White text */
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); /* Gradient background */
+    padding: 1px;
+    border-radius: 1px;
+}
+
+
+  </style>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" class="nav-item active" href="index0B.html">Kwaga Ltd</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="#">About Us <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Portfolio</a></li>
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Card Design</a></li>
+                <li><a href="#">Brouchure Design</a></li>
+                <li><a href="#">Pamplet Design</a></li>
+                <li><a href="#">Handbill Design</a></li>
+                <li><a href="#">Catlogue Design</a></li>
+                <li><a href="#">Flex banner Design</a></li>
+                <li><a href="#">Bill book Design</a></li>
+                <li><a href="#">Latherhead Design</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Graphic Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Email Signature</a></li>
+                <li><a href="#">Social Media Cover Page Design</a></li>
+                <li><a href="#">Domain Based Email Creation</a></li>
+                <li><a href="#">Other Email Creation</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Advertisement Page</a></li>
+                <li><a href="#">Landing Page Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Removing Background Passport Size Photo</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Interior Design</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Video & Editing </a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">SE0</a></li>
+                <li><a href="#">SEM</a></li>
+                <li><a href="#">SMM</a></li>
+                <li role="separator" class="divider"></li>
+                 <li><a href="#">Content Creation</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Website Developement</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CMS</a></li>
+                <li><a href="#">FrameWork</a></li>
+                <li><a href="#">Blogger</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Website Maintainenece</a></li>
+                <li><a href="#">Website Reconstrunction</a></li>
+                <li role="separator" class="divider"></li>
+              
+              
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Products <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Software</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Billing Software</a></li>
+                <li><a href="#">School Software</a></li>
+                 <li><a href="#">Retail Software</a></li>
+                <li><a href="#">Currior Software</a></li>
+                <li><a href="#">Office Software</a></li>
+                <li><a href="#">Showroom Software</a></li>
+              </ul>
+              <ul>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Pharmacy Software</a></li>
+                <li><a href="#">Hospital Software</a></li>
+                <li><a href="#">SuperMarket Software</a></li>
+                <li><a href="#">IVR Software</a></li>
+                <li><a href="#">HRM Software</a></li>
+                <li><a href="#">MLM Software</a></li>
+                <li><a href="#">Instiute Software</a></li>
+              </ul>
+            </div>
+          </li>
+<li><a href="#">Career</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact</a></li>
+ <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Techonology <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Larvel</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Angular</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Node</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Jquery</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Dotnet</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Talwind</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CSS3</a></li>
+              </ul>
+            </div>
+          </li>
+    <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Paid Advertisement <span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Linkdin</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">FaceBook</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Jquery</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Dotnet</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Talwind</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">CSS3</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+<!-- <ul class="nav navbar-nav navbar-right">
+          
+           <li> <a class="btn btn-outline-dark mr-2 btn-sm" data-toggle="modal" data-target="#loginModal"
+          href="">Log in</a></li>
+           <li><a class="btn btn-dark btn-sm" data-toggle="modal" data-target="#createModal" href="">Create</a></li>
+          
+      </ul>-->
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.dropdown-toggle').click(function(){
+        var $dropdown = $(this).next('.dropdown-menu');
+        $('.dropdown-menu').not($dropdown).slideUp();  // Close all other dropdowns
+        $dropdown.slideToggle();  // Toggle the clicked dropdown
+      });
+
+      $(document).click(function(event) {
+        if (!$(event.target).closest('.dropdown').length) {
+          $('.dropdown-menu').slideUp();  // Close dropdowns if clicking outside
+        }
+      });
+    });
+  </script>
+  <!-- end header -->
+  <!-- end header -->
+
+
+ <style>
+    /* Modal header */
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom: none;
+}
+
+/* Modal title */
+.modal-title {
+    font-size: 24px;
+}
+
+/* Modal body */
+.modal-body {
+    padding: 20px;
+}
+
+/* Form inputs */
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Submit button */
+.modal-footer button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Close button */
+.modal-footer button[type="button"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.modal-footer button[type="button"]:hover {
+    background-color: #c82333;
+}
+h1 {
+  font-family: bebas neue;
+  font-size: 46px;
+  text-align: center;
+  color: rgb(44,48,52);
+  margin: 0;
+  padding: 0 0 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+h2 {
+  font-family: bebas neue;
+  font-size: 26px;
+  line-height: 20px;
+  text-align: left;
+  color: rgb(44,48,52);
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+p {
+  font-family: open sans;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgb(44,48,52);
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+    </style>
+
+
+<h1>Privacy Policy</h1>
+<p>Last updated February 2024.
+<br><br>
+Welcome to Kwaga Ltd. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you visit our website or use our services. By accessing or using our services, you agree to the terms
+                outlined in this policy.
+<br><br>
+1. kwaga ltd;<br>
+2. Contact information 7838090428;<br>
+3. location Vill Ramganj Dist Patna;<br>
+
+If you create an account using, or otherwise connect your account to, a social networking services account (e.g. Twitter or Facebook), we may also collect information provided to us by such social networking service including for example your: name; email address; birthday; geographic location; interests; profile picture; gender; networks; user ID; list of friends; and any information you have made public on such social networking account.
+<br><br>
+We automatically collect information about how you use our services, for example, pages you have viewed. We also collect certain technical information about your device including your Internet protocol address, geo-location information, your browser type, language and identifying information, your operating system and application version, device types, device model and manufacturer, device identifiers, and your device operating system type and version.
+<br><br>
+We also use cookies, Web beacons, and URL information to gather information regarding the date and time of your visit and the information for which you searched and which you viewed. Cookies are small pieces of information that a website sends to your computer's hard drive while you are viewing a website. We may use both session cookies (which expire once you close your web browser) and persistent cookies (which usually stay on your computer until you delete them) to provide you with a more personal and interactive experience on our Site. Web beacons are digital images that are used to log information on the Services or in our emails. We use Web beacons to manage cookies, count visits, and to learn what marketing works and what does not. We also use Web beacons to tell if you open or act on our emails.
+<br><br>
+Others, including third party analytics service providers and advertising partners may also collect personally identifiable information about your online activities over time and across different Web sites when you use our Services, including as described in this Privacy Policy. This Policy does not apply to and we are not responsible for those other parties. Third party analytics services may use cookies and web beacons through our Site (for example Google Analytics) to provide us with information about how you use and interact with our Site. We encourage you to review the privacy policies of these third parties to learn about your choices about information they collect from you.</p>
+<h2>Sharing Of Your Information</h2>
+<p>The kwaga services may allow you to connect and share your actions, comments, content, profile, and information publicly or with other people. Please be mindful of your own privacy needs as you choose who to connect with and what to share and make public. We cannot control the privacy or security of information you choose to make public or share with others.
+<br><br>
+The Services may also provide you with the option to share certain information from your kwaga account with social networking services like Facebook, Google, or Twitter. We are not responsible for the use or re-sharing by others of any of your information once it is made public. If you do not want your information to be made public, you should not use the kwaga services in this manner and/or you should adjust your privacy settings on the applicable social networking service accordingly. We are not responsible for and we do not control these social networking services privacy practices. Please review the applicable privacy policy for information about how they use your information.</p>
+<h2>How we Use Your Information</h2>
+<p>We generally use your information to:
+<br><br>
+Facilitate the creation of and secure your account on the Services;
+Identify you as a user in our system;
+Provide, personalize, and improve the Services;
+Communicate with you about your use of the Services;
+Develop new products and services,
+Customize the advertising you view and recommend content;
+Fulfill your requests;
+Send newsletters, surveys, offers and promotional materials related to the Services and for other marketing purposes of kwaga using your contact information;
+Protect, investigate, and prevent potentially fraudulent, unauthorized, or illegal activities;
+Protect our rights and the rights of other users; and
+As otherwise described in this Privacy Policy or in notices we provided to you.
+We may also use your information to verify your geographic location. We may use your geographic location data to personalize our Service, to recommend content, determine whether the information you have requested is available in your location.</p>
+<h2>How we Disclose Your Information</h2>
+<p>We may share your information and collect information as follows:
+<br><br>
+1. We may share your personal information with your consent or at your direction.
+               <ul>
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Billing information</li>
+                <li>Company details</li>
+            </ul>
+2. We may also share your information with others who perform services on our behalf.
+            <ul>
+                <li>IP address</li>
+                <li>Browser type</li>
+                <li>Operating system</li>
+                <li>Pages visited on our site</li>
+                <li>Time and date of visit</li>
+            </ul>
+3. We use the collected information for the following purposes:
+            <ul>
+                <li>To provide and maintain our services</li>
+                <li>To improve and personalize your experience</li>
+                <li>To process transactions and send related information</li>
+                <li>To respond to your comments, questions, and customer service requests</li>
+                <li>To send you technical notices, updates, security alerts, and support and administrative messages</li>
+                <li>To monitor and analyze trends, usage, and activities in connection with our services</li>
+            </ul>
+4. We also may disclose your information if we believe doing so is appropriate or necessary to prevent any liability, or fraudulent, abusive, or unlawful uses or to protect kwaga and our Services; or any rights, property, or personal safety of kwaga or others.
+5. In the event that kwaga is or may be acquired by or merged with another company or involved in any other business deal (or negotiation of a business deal) involving sale or transfer of all or part of our business or assets, we may transfer or assign your information as part of or in connection with the transaction. Finally, in the event of insolvency, bankruptcy, or receivership, information may be transferred as a business asset.
+We may also share aggregated and anonymized data with our partners, advertisers, and other third parties.</p>
+<h2>Security</h2>
+<p>kwaga takes commercially reasonable steps to help protect your Information against loss, misuse and unauthorized access, or disclosure. No company can fully prevent security risks, however. While we strive to protect your personal information, we cannot guarantee its absolute security. To help protect yourself and your information, choose a unique password for our Services and do not use a password on our Services that you would use on any other website or online service.</p>
+<h2>Dispute Resolution</h2>
+<p>If you believe that kwaga has not adhered to this Statement, please contact kwaga by e-mail at support@kwaga.com. We will do our best to address your concerns. If you feel that your complaint has been addressed incompletely, we invite you to let us know for further investigation.</p>
+<h2>Information Choices</h2>
+<p>You may opt out of receiving promotional emails from kwaga by following the instructions in those emails. If you opt out, we may still send you non-promotional emails, such as emails about your accounts or our ongoing business relations. You may also send requests about your personal information, including changes to your contact preferences, changes to or deletions of your information or content you post, and requests to opt-out of sharing your personal information with third parties by emailing support@kwaga.com. Please note that deletion of your information or content does not ensure complete or comprehensive removal of the content or information posted on the Services.
+<br><br>
+When you visit the Site, we and others give you the following choices about use of mechanisms for tracking, including tracking of your online activities over time and across different websites and online services by third parties. Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies from our Site or from third parties. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Site. To opt-out of Google Analytics web tracking for certain browsers, you can download Google Analytics Opt-out Browser Add-on. You may opt out of other cookies that may be present on the Site by following the directions on Google's opt-out page. However, while we and others give you choices as described in this policy, there are many ways in which Web browser signals and other similar mechanisms can indicate your choice to disable tracking, and our Site may not be aware of or honor every mechanism.
+<br><br>
+You may have the right to know what personal information kwaga has about you and to correct any inaccuracies. Please direct any such requests by email to support@kwaga.com or by one of the other means listed below.</p>
+<h2>Changes and Updates to this Privacy Policy</h2>
+<p>From time to time, we may revise the Policy. To help you stay current of any changes, we note the date the Privacy Policy was last updated above.</p>
+<h2>Contact Information</h2>
+<p>Please contact kwaga with any questions or comments about this Policy, your information, our third-party disclosure practices, or your consent choices.
+<br><br>
+ <p>We do not share your personal information with third parties except in the following circumstances:</p>
+            <ul>
+                <li>With your consent</li>
+                <li>For external processing with trusted partners who adhere to our privacy policy</li>
+                <li>For legal reasons if we are required to by law or to protect our rights and safety</li>
+            </ul>
+Kwaga Ltd<br>
+Email: [service@kwaga.ltd]
+Phone: [7838090428]
+Address: [Vill Ramganj Dist Patna]
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const applyButtons = document.querySelectorAll('.btn-success[data-toggle="modal"]');
+    const applyModal = document.getElementById('ApplyJobPost');
+
+    applyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const jobTitle = button.getAttribute('data-job-title');
+            const modalTitle = applyModal.querySelector('.modal-title');
+            const designationInput = applyModal.querySelector('select[name="designation"]');
+            modalTitle.textContent = `Apply For ${jobTitle}`;
+            designationInput.value = jobTitle;
+        });
+    });
+
+    // Function to show only the content of the active tab and hide others
+    const showTabContent = (tabId) => {
+        const tabContent = document.querySelectorAll('.tab-pane');
+        tabContent.forEach(tab => {
+            if (tab.id === tabId) {
+                tab.classList.add('show', 'active');
+            } else {
+                tab.classList.remove('show', 'active');
+            }
+        });
+    };
+
+    // Event listener for tab clicks
+    const tabLinks = document.querySelectorAll('.nav-link[data-toggle="pill"]');
+    tabLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const tabId = link.getAttribute('href').replace('#', '');
+            showTabContent(tabId);
+        });
+    });
+
+    applyModal.addEventListener('submit', (event) => {
+        event.preventDefault();
+        // Perform form validation and submission here
+        alert('Your data is sending successfully!');
+        // Optionally, you can reset the form after submission
+        applyModal.reset();
+        // Close the modal
+        $('#ApplyJobPost').modal('hide');
+    });
+});
+</script>
+
+
+
+  <section class="section3">
+    <div class="container withpadding">
+      <div class="message">
+        <div class="col-lg-9 col-md-9 col-sm-9">
+          <h3>Grab the attention of your customers!</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <a class="dmbutton button large pull-right" href="#"><i class="fa fa-download"></i> GET A QUOTE</a>
+        </div>
+      </div>
+      <!-- end message -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end section3 -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">About us</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s..</p>
+        <a class="button small" href="#">read more</a>
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Recent Posts</h4>
+        <ul class="recent_posts">
+          <li>
+            <a href="home1.html#">
+						<img src="img/recent_post_01.png" alt="" />Our New Dashboard Is Here</a>
+            <a class="readmore" href="#">read more</a>
+          </li>
+          <li>
+            <a href="home1.html#">
+						<img src="img/recent_post_02.png" alt="" />Design Is In The Air</a>
+            <a class="readmore" href="#">read more</a>
+          </li>
+        </ul>
+        <!-- recent posts -->
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Get In Touch</h4>
+        <ul class="contact_details">
+          <li><i class="fa fa-envelope-o"></i> info@yoursite.com</li>
+          <li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
+          <li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li>
+          <li><a href="#"><i class="fa fa-map-marker"></i> View large map</a></li>
+        </ul>
+        <!-- contact_details -->
+      </div>
+      <!-- end widget -->
+      <div class="widget col-lg-3 col-md-3 col-sm-12">
+        <h4 class="title">Flickr Stream</h4>
+        <ul class="flickr">
+          <li><a href="#"><img alt="" src="img/flickr_01.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_02.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_03.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_04.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_05.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_06.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_07.jpg"></a></li>
+          <li><a href="#"><img alt="" src="img/flickr_08.jpg"></a></li>
+        </ul>
+      </div>
+      <!-- end widget -->
+    </div>
+    <!-- end container -->
+
+    <div class="copyrights">
+      <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12 columns footer-left">
+          <p>Copyright © 2014 - All rights reserved.</p>
+          <div class="credits">
+            <!--
+              You are NOT allowed to delete the credit link to TemplateMag with free version.
+              You can delete the credit link only if you bought the pro version.
+              Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/maxibiz-bootstrap-business-template/
+              Licensing information: https://templatemag.com/license/
+            -->
+            Created with MaxiBiz template by <a href="https://templatemag.com/">TemplateMag</a>
+          </div>
+        </div>
+        <!-- end widget -->
+        <div class="col-lg-6 col-md-6 col-sm-12 columns text-right">
+          <div class="footer-menu right">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Site Terms</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end large-6 -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+  </footer>
+  <!-- end footer -->
+  <div class="dmtop">Scroll to Top</div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+  <script src="lib/isotope/isotope.min.js"></script>
+  <script src="lib/hover/hoverdir.js"></script>
+  <script src="lib/hover/hoverex.min.js"></script>
+  <script src="lib/unveil-effects/unveil-effects.js"></script>
+  <script src="lib/owl-carousel/owl-carousel.js"></script>
+  <script src="lib/jetmenu/jetmenu.js"></script>
+  <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+  <script src="lib/jigowatt/jigowatt.js"></script>
+  <script src="lib/easypiechart/easypiechart.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
