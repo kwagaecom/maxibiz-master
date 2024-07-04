@@ -811,31 +811,39 @@ socialShareButtons.forEach(function (button) {
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script>
-        // JavaScript to handle form submission
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-            const formData = new FormData(event.target);
-            const email = 'kwagaecom@gmail.com'; // Your Gmail address
-            const subject = 'Contact Form Submission'; // Subject for the email
+<script>
+    // JavaScript to handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-            let message = "Form Submission Details:\n\n";
+        const formData = new FormData(event.target);
+        const email = 'kwagaecom@gmail.com'; // Your Gmail address
+        const subject = 'Contact Form Submission'; // Subject for the email
 
-            // Iterate over form data and append to message
-            for (const [key, value] of formData.entries()) {
-                message += `${key}: ${value}\n`;
-            }
+        let message = "Form Submission Details:\n\n";
 
-            // Create a "mailto" URL with the pre-filled email subject and body
-            const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-            // Open the default email client with the pre-filled email
-            window.location.href = mailtoURL;
-
-            // You can also display a success message or redirect the user to a thank-you page
+        // Constructing the message body with form data
+        formData.forEach(function(value, key) {
+            message += `${key}: ${value}\n`;
         });
-    </script>
+
+        // Using encodeURIComponent to handle special characters in the email body
+        const body = encodeURIComponent(message);
+
+        // Creating a mailto link with subject and body
+        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+        // Opening the mail client with the pre-filled email
+        window.location.href = mailtoURL;
+
+        // Optionally, you can provide feedback to the user after submission
+        // For example, displaying a success message or redirecting to a thank-you page
+    });
+</script>
+
 
 
 
