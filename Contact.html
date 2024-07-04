@@ -618,27 +618,52 @@ socialShareButtons.forEach(function (button) {
               </div>
             </div>
           </div>
-          <form id="contactForm">
-            <div class="col-md-6 p-3">
-              <input required placeholder="First Name" type="text" name="first_name" id="first_name" />
-            </div>
-            <div class="col-md-6 p-3">
-              <input required placeholder="Last Name" type="text" name="last_name" id="last_name" />
-            </div>
-            <div class="col-md-6 p-3">
-              <input required placeholder="E-mail" type="email" name="email" id="email" />
-            </div>
-            <div class="col-md-6 p-3">
-              <input required placeholder="Phone" type="tel" name="phone" id="phone" />
-            </div>
-            <div class="col-md">
-              <textarea required name="message" placeholder="Write your message" id="message" cols="30" rows="1"></textarea>
-            </div>
-            <div class="text-end mt-4">
-              <input class="btn px-4 py-3 btn-outline-dark" type="submit" value="Send Message" />
-            </div>
-          </form>
+         <form id="contactForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required aria-label="Full Name">
+    
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required aria-label="Email Address">
+    
+    <label for="date">Preferred Visit Date</label>
+    <input type="date" id="date" name="date" required aria-label="Preferred Visit Date">
+    
+    <label for="time">Preferred Time</label>
+    <input type="time" id="time" name="time" required aria-label="Preferred Time">
+    
+    <label for="country">Country</label>
+    <select id="country" name="country" required aria-label="Country">
+        <option value="" disabled selected>Select your country</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="Australia">Australia</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Other">Other</option>
+    </select>
+    
+    <label for="software">Preferred Software</label>
+    <select id="software" name="software" required aria-label="Preferred Software">
+        <option value="" disabled selected>Select your preferred software</option>
+        <option value="Software1">Software 1</option>
+        <option value="Software2">Software 2</option>
+        <option value="Software3">Software 3</option>
+        <option value="Software4">Software 4</option>
+    </select>
+    
+    <label for="message">Message</label>
+    <textarea rows="6" placeholder="Your Message" id="message" name="message" required aria-label="Message"></textarea>
+    
+    <button type="submit" id="submit" name="submit">Send</button>
+</form>
+<div id="error" role="alert"></div>
+<div id="success-msg" role="status"></div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script>
@@ -670,6 +695,7 @@ socialShareButtons.forEach(function (button) {
         // For example, displaying a success message or redirecting to a thank-you page
     });
 </script>
+
 
         </div>
       </div>
