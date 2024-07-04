@@ -550,8 +550,7 @@ socialShareButtons.forEach(function (button) {
       padding: 1rem;
     }
   </style>
-</head>
-<body>
+
   <div class="container">
     <div class="bg-light">
       <div class="row">
@@ -639,31 +638,39 @@ socialShareButtons.forEach(function (button) {
               <input class="btn px-4 py-3 btn-outline-dark" type="submit" value="Send Message" />
             </div>
           </form>
-          <script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
     // JavaScript to handle form submission
     document.getElementById("contactForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent the default form submission
 
         const formData = new FormData(event.target);
         const email = 'kwagaecom@gmail.com'; // Your Gmail address
-        const subject = ' Child Appointement Form'; // Subject for the email
+        const subject = 'Contact Form Submission'; // Subject for the email
 
-        let message = "Child Appointement Details:\n\n";
+        let message = "Form Submission Details:\n\n";
 
-        // Iterate over form data and append to message
-        for (const [key, value] of formData.entries()) {
+        // Constructing the message body with form data
+        formData.forEach(function(value, key) {
             message += `${key}: ${value}\n`;
-        }
+        });
 
-        // Create a "mailto" URL with the pre-filled email subject and body
-        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        // Using encodeURIComponent to handle special characters in the email body
+        const body = encodeURIComponent(message);
 
-        // Open the default email client with the pre-filled email
+        // Creating a mailto link with subject and body
+        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+        // Opening the mail client with the pre-filled email
         window.location.href = mailtoURL;
 
-        // You can also display a success message or redirect the user to a thank-you page
+        // Optionally, you can provide feedback to the user after submission
+        // For example, displaying a success message or redirecting to a thank-you page
     });
 </script>
+
         </div>
       </div>
     </div>
