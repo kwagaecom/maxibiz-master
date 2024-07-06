@@ -640,7 +640,7 @@ to {right: 7px;
 <div id="contactForm" class="contactForm">
 <a id="closeBtn" onclick="closeForm()" href="javascript:void();"><i class="fa fa-times"></i></a>
 <h3>Contact Us</h3><br>
- <form id="contactForm">
+  <form method="post" action="" name="contactForm"id="contactForm">
     <input type="text" id="firstName" name="First Name" placeholder="First Name" required>
     <input type="text" id="lastName" name="Last Name" placeholder="Last Name" required>
     <input type="email" id="email" name="Enter Your Email" placeholder="Enter Your Email" required>
@@ -653,30 +653,16 @@ to {right: 7px;
     <button type="submit" id="btn" name="submit">Submit</button>
 </form>
 </div>
- <script>
-    // JavaScript to handle form submission
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby05eqqcqcyZkxDBarinsAGoxVJ_bBTVzRsFYLJoYydL88gmyvZ82ShPi41k7mWUUXX/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-        const formData = new FormData(event.target);
-        const email = 'kwagaecom@gmail.com'; // Your Gmail address
-        const subject = 'Contact Farm Submission'; // Subject for the email
-
-        let message = "Contact Farm Details:\n\n";
-
-        // Iterate over form data and append to message
-        for (const [key, value] of formData.entries()) {
-            message += `${key}: ${value}\n`;
-        }
-
-        // Create a "mailto" URL with the pre-filled email subject and body
-        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
-        // Open the default email client with the pre-filled email
-        window.location.href = mailtoURL;
-
-        // You can also display a success message or redirect the user to a thank-you page
-    });
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 <style>
       .elementor-background-slideshow {
