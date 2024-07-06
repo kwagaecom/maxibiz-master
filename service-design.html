@@ -500,8 +500,6 @@ socialShareButtons.forEach(function (button) {
   <!-- end header -->
 <style>
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
-
 *{
 margin: 0;
 padding: 0;
@@ -588,7 +586,6 @@ font-weight: bold;
 font-family: 'Raleway', sans-serif;
 font-size: 15px;
 }
-
 input:focus {
 border: 3px solid #000;
 outline: none;
@@ -643,35 +640,43 @@ to {right: 7px;
 <div id="contactForm" class="contactForm">
 <a id="closeBtn" onclick="closeForm()" href="javascript:void();"><i class="fa fa-times"></i></a>
 <h3>Contact Us</h3><br>
-<form method="POST" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScd_QpMNxKcaklMsZG-hR_cLH0WGqUFrGVttnwEJ7BNOE5FGg/formResponse" target="_self" id="form">
-    <input type="text" id="firstName" name="entry.149572740" placeholder="First Name" required>
-    <input type="text" id="lastName" name="entry.1313901978" placeholder="Last Name" required>
-    <input type="email" id="email" name="entry.1628783772" placeholder="Enter Your Email" required>
+ <form id="contactForm">
+    <input type="text" id="firstName" name="First Name" placeholder="First Name" required>
+    <input type="text" id="lastName" name="Last Name" placeholder="Last Name" required>
+    <input type="email" id="email" name="Enter Your Email" placeholder="Enter Your Email" required>
     <p style="margin-top: 10px; margin-bottom: 10px; font-size: 14px;">What Services Do You Need?</p>
-    <input type="radio" name="entry.741190037" id="cbox" value="Web Design & Development">Logo Design<br>
-    <input type="radio" name="entry.741190037" id="cbox" value="Digital Marketing">Card Design<br>
-  <input type="radio" name="entry.741190037" id="cbox" value="Email Marketing">Catlogue Design<br>
-  <input type="radio" name="entry.741190037" id="cbox" value="SEO">Flex Banner Design<br>
-  <input type="radio" name="entry.741190037" id="cbox" value="Other">Bill Book Design<br>
+    <input type="radio" name="Service" id="cbox" value="Logo Design">Logo Design<br>
+    <input type="radio" name="Service" id="cbox" value="Card Design">Card Design<br>
+  <input type="radio" name="Service" id="cbox" value="Catlogue Design">Catlogue Design<br>
+  <input type="radio" name="Service" id="cbox" value="Flex Banner Design">Flex Banner Design<br>
+  <input type="radio" name="Service" id="cbox" value="Bill Book Design">Bill Book Design<br>
     <button type="submit" id="btn" name="submit">Submit</button>
 </form>
 </div>
+ <script>
+    // JavaScript to handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
+        const formData = new FormData(event.target);
+        const email = 'kwagaecom@gmail.com'; // Your Gmail address
+        const subject = 'Contact Farm Submission'; // Subject for the email
 
-</style>
+        let message = "Contact Farm Details:\n\n";
 
-<script>
-    let closeForm = function() {
-let form = document.getElementById('contactForm');
-let open = true;
+        // Iterate over form data and append to message
+        for (const [key, value] of formData.entries()) {
+            message += `${key}: ${value}\n`;
+        }
 
-form.style.display = "block";
+        // Create a "mailto" URL with the pre-filled email subject and body
+        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
-if(open == true){
-form.style.display = "none";
-open = false;
-} 
-}
+        // Open the default email client with the pre-filled email
+        window.location.href = mailtoURL;
+
+        // You can also display a success message or redirect the user to a thank-you page
+    });
 </script>
 <style>
       .elementor-background-slideshow {
