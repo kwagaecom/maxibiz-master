@@ -1426,11 +1426,12 @@ socialShareButtons.forEach(function (button) {
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2 class="modal-title" id="applyJobPostTitle">Apply For Required Post</h2>
+                              
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                             </div>
                             <div class="modal-body">
-                                <form action="career-mail.php" method="post" enctype="multipart/form-data" onsubmit="alert('Your data is sending successfully!');">
+                                <!----<form action="career-mail.php" method="post" enctype="multipart/form-data" onsubmit="alert('Your data is sending successfully!');">--->
+                              <form id="contactForm">
                                     <div>
                                         <input type="text" name="name" class="form-control" placeholder="Name :" required />
                                     </div>
@@ -1441,25 +1442,28 @@ socialShareButtons.forEach(function (button) {
                                         <input type="tel" maxlength="10" name="mobile" class="form-control" placeholder="Mobile No. :" required />
                                     </div>
                                     <div>
-                                        <select name="designation" class="form-control" required>
+                                        <select name="designation" class="form-control" id="jobTitleDropdown" required>
                                             <option value="">Job Title :</option>
                                             <option value="Manager">Manager</option>
                                             <option value="HR">HR</option>
                                             <option value="Sales Manager">Sales Manager</option>
                                             <option value="Sales Co-ordinator">Sales Co-ordinator</option>
                                             <option value="Marketing Executive">Marketing Executive</option>
-                                            <option value="Accountant">Accountant</option>
+                                           <!---- <option value="Accountant">Accountant</option>
                                             <option value="Java Developer">Java Developer</option>
                                             <option value=".Net Developer">.Net Developer</option>
                                             <option value="PHP Developer">PHP Developer / Web Developer</option>
                                             <option value="Android Developer">Android Developer</option>
                                             <option value="Frontend Developer">Frontend Developer</option>
-                                            <option value="Software Tester">Software Tester</option>
+                                            <option value="Software Tester">Software Tester</option>--->
                                             <option value="Tellecaller">Tellecaller</option>
                                         </select>
                                     </div>
-                                    <div>
+                                   <!---- <div>
                                         <input name="resume" type="file" id="resume" required accept=".pdf,.docx" />
+                                    </div>--->
+                                    <div>
+                                        <input type="text" name="Biodadalink" class="form-control" placeholder="Biodata Link:" required />
                                     </div>
                                     <div>
                                         <textarea name="description" class="form-control" placeholder="Description :" required></textarea>
@@ -1477,6 +1481,31 @@ socialShareButtons.forEach(function (button) {
                                     </div>
                                 </form>
                             </div>
+ <script>
+    // JavaScript to handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = new FormData(event.target);
+        const email = 'kwagaecom@gmail.com'; // Your Gmail address
+        const subject = 'Contact Form Submission'; // Subject for the email
+
+        let message = "Form Submission Details:\n\n";
+
+        // Iterate over form data and append to message
+        for (const [key, value] of formData.entries()) {
+            message += `${key}: ${value}\n`;
+        }
+
+        // Create a "mailto" URL with the pre-filled email subject and body
+        const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+        // Open the default email client with the pre-filled email
+        window.location.href = mailtoURL;
+
+        // You can also display a success message or redirect the user to a thank-you page
+    });
+</script>
                         </div>
                     </div>
                 </div>
