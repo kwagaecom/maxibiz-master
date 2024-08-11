@@ -605,178 +605,139 @@ socialShareButtons.forEach(function (button) {
                 <h6 align="center">Techonology</h6>
             </div>
             <div class="panel-body">
-                <form id="contactForm">
-                    <p>Please complete all areas:</p>
+               <form id="contactForm">
+    <p>Please complete all areas:</p>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
-                                <label for="InputFName">First Name</label>
-                                <input type="text" class="form-control" id="InputFName" name="First Name" placeholder="First Name" required>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
-                                <label for="InputLName">Last Name</label>
-                                <input type="text" class="form-control" id="InputLName" name="Last Name" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                    </div>
+    <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+            <label for="InputFName">First Name</label>
+            <input type="text" class="form-control" id="InputFName" name="First Name" placeholder="First Name" required>
+        </div>
+        <div class="form-group col-12 col-md-6">
+            <label for="InputLName">Last Name</label>
+            <input type="text" class="form-control" id="InputLName" name="Last Name" placeholder="Last Name" required>
+        </div>
+    </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
-                                <label for="InputEmail">E-mail</label>
-                                <input type="email" class="form-control" id="InputEmail" name="E-mail" placeholder="E-mail" required>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
-                                <label for="InputTel">Phone</label>
-                                <input type="tel" class="form-control" id="InputTel" name="Phone" placeholder="Phone Number" required>
-                            </div>
-                        </div>
-                    </div>
+    <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+            <label for="InputEmail">E-mail</label>
+            <input type="email" class="form-control" id="InputEmail" name="E-mail" placeholder="E-mail" required>
+        </div>
+        <div class="form-group col-12 col-md-6">
+            <label for="InputTel">Phone</label>
+            <input type="tel" class="form-control" id="InputTel" name="Phone" placeholder="Phone Number" required>
+        </div>
+    </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
-                                <label for="InputAddress1">Address 1</label>
-                                <input type="text" class="form-control" id="InputAddress1" name="Address" placeholder="Street Address" required>
-                            </div>
+    <div class="form-row">
+        <div class="form-group col-12">
+            <label for="InputAddress1">Address 1</label>
+            <input type="text" class="form-control" id="InputAddress1" name="Address" placeholder="Street Address" required>
+        </div>
+        <div class="form-group col-12">
+            <label for="InputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="InputAddress2" name="Apartment" placeholder="Apartment #, Suite, etc.">
+        </div>
+    </div>
 
-                            <div class="form-group">
-                                <label for="InputAddress2">Address 2</label>
-                                <input type="text" class="form-control" id="InputAddress2" name="Apartment" placeholder="Apartment #, Suite, etc.">
-                            </div>
-                        </div>
+    <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+            <label for="InputCity">City</label>
+            <input type="text" class="form-control" id="InputCity" name="City" placeholder="City" required>
+        </div>
+        <div class="form-group col-6 col-md-3">
+            <label for="InputState">State</label>
+            <input type="text" class="form-control" id="InputState" name="State" placeholder="State" required>
+        </div>
+        <div class="form-group col-6 col-md-3">
+            <label for="InputZip">Zip</label>
+            <input type="number" class="form-control" id="InputZip" name="Zip" placeholder="Zip Code" required>
+        </div>
+    </div>
 
-                        <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
-                                <label for="InputCity">City</label>
-                                <input type="text" class="form-control" id="InputCity" name="City" placeholder="City" required>
-                            </div>
+    <div class="form-group">
+        <label for="InputPAN">PAN Card ID</label>
+        <input type="text" class="form-control" id="InputPAN" name="PAN Card" placeholder="PAN Card #" required>
+    </div>
 
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="InputState">State</label>
-                                        <input type="text" class="form-control" id="InputState" name="State" placeholder="State" required>
-                                    </div>
-                                </div>
+    <hr />
 
-                                <div class="col-xs-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="InputZip">Zip</label>
-                                        <input type="number" class="form-control" id="InputZip" name="Zip" placeholder="Zip Code" required>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label for="date">Application Date</label>
+        <input type="date" class="form-control" name="Date" id="date" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="InputID">PAN Card ID</label>
-                        <input type="text" class="form-control" id="InputID" name="PAN Card" placeholder="PAN Card #" required>
-                    </div>
+    <div class="form-group">
+        <label for="service">Area of Knowledge</label>
+        <select id="service" name="Area of Knowledge" class="form-control" required>
+            <option value="" disabled selected>Select Your Area of Knowledge</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Python">Python</option>
+            <option value="C/C++">C/C++</option>
+        </select>
+    </div>
 
-                    <hr />
+    <div class="form-group">
+        <p>Have you attended an Internship Previously?</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Internship Status" id="optionsRadios1" value="Yes" required>
+            <label class="form-check-label" for="optionsRadios1">Yes</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Internship Status" id="optionsRadios2" value="No" required>
+            <label class="form-check-label" for="optionsRadios2">No</label>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label for="date">Application Date</label>
-                        <input type="date" class="form-control" name="Date" id="date" required>
-                    </div>
+    <hr />
 
-                    <div class="formbold-mb-5">
-                        <label for="service" class="formbold-form-label">Area of Knowledge</label>
-                        <select id="service" name="Area of Knowledge" class="formbold-form-input" required>
-                            <option value="" disabled selected>Select Your Area of Knowledge</option>
-                            <option value="HTML">HTML</option>
-                            <option value="CSS">CSS</option>
-                            <option value="Bootstrap">Bootstrap</option>
-                            <option value="Python">Python</option>
-                            <option value="C/C++">C/C++</option>
-                        </select>
-                    </div>
+    <div class="form-group">
+        <label for="InputBiodataURL">Biodata URL</label>
+        <input type="url" class="form-control" id="InputBiodataURL" name="Biodata URL" placeholder="https://" required>
+    </div>
 
-                    <div class="form-group">
-                        <p>Have you attended an Internship Previously?</p>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="Internship Status" id="optionsRadios1" value="Yes" required> Yes
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="Internship Status" id="optionsRadios2" value="No" required> No
-                            </label>
-                        </div>
-                    </div>
+    <hr />
 
-                    <hr />
-                 
-                    <div class="form-group">
-                        <label for="InputID">Biodata URL</label>
-                        <input type="text" class="form-control" id="InputID" name="Biodata URL" placeholder="https://" required>
-                    </div>
-                   <!---- <p>Please upload the following for this application:</p>
+    <p>Recommendations:</p>
 
-                    <div class="form-group">
-                        <label for="InputFile1">Letter of Intent</label>
-                        <input type="file" id="InputFile1" required>
-                    </div>---->
-                                          
-                    <hr />
+    <div class="form-row">
+        <div class="form-group col-12 col-md-4">
+            <label for="InputR1Name">Recommender 1</label>
+            <input type="text" class="form-control" id="InputR1Name" name="Recommender[]" placeholder="First and Last Name" required>
+        </div>
+        <div class="form-group col-12 col-md-4">
+            <label for="InputR1Email">Email</label>
+            <input type="email" class="form-control" id="InputR1Email" name="RecommenderEmail[]" placeholder="E-mail" required>
+        </div>
+        <div class="form-group col-12 col-md-4">
+            <label for="InputR1Type">Title</label>
+            <input type="text" class="form-control" id="InputR1Type" name="RecommenderTitle[]" placeholder="Recommender Title" required>
+        </div>
+    </div>
 
-                    <p>Recommendations:</p>
+    <div class="form-row">
+        <div class="form-group col-12 col-md-4">
+            <label for="InputR2Name">Recommender 2</label>
+            <input type="text" class="form-control" id="InputR2Name" name="Recommender[]" placeholder="First and Last Name" required>
+        </div>
+        <div class="form-group col-12 col-md-4">
+            <label for="InputR2Email">Email</label>
+            <input type="email" class="form-control" id="InputR2Email" name="RecommenderEmail[]" placeholder="E-mail" required>
+        </div>
+        <div class="form-group col-12 col-md-4">
+            <label for="InputR2Type">Title</label>
+            <input type="text" class="form-control" id="InputR2Type" name="RecommenderTitle[]" placeholder="Recommender Title" required>
+        </div>
+    </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <label for="InputR1Name">Recommender 1</label>
-                                <input type="text" class="form-control" name="Recommender" id="InputR1Name" placeholder="First and Last Name" required>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <label for="InputR1Email">&nbsp;</label>
-                                <input type="email" class="form-control" name="Recommender" id="InputR1Email" placeholder="E-mail" required>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <label for="InputR1Type">&nbsp;</label>
-                                <input type="text" class="form-control" name="Recommender" id="InputR1Type" placeholder="Recommender Title" required>
-                            </div>
-                        </div>
-                    </div>
+    <hr />
 
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <label for="InputR2Name">Recommender 2</label>
-                                <input type="text" class="form-control" id="InputR2Name" name="Recommender1" placeholder="First and Last Name" required>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <label for="InputR2Email">&nbsp;</label>
-                                <input type="email" class="form-control" id="InputR2Email" name="Email" placeholder="E-mail" required>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="form-group">
-                                <label for="InputR2Type">&nbsp;</label>
-                                <input type="text" class="form-control" id="InputR2Type" name="Title" placeholder="Recommender Title" required>
-                            </div>
-                        </div>
-                    </div>
+    <button type="submit" class="btn btn-block btn-primary">Submit</button>
+</form>
 
-                  
-                    <hr />
-
-                    <button type="submit" class="btn btn-block s3-gt center-block formbold-btn">Submit</button>
-                </form>
             </div>
         </div>
     </div>
