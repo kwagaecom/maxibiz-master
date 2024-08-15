@@ -3104,7 +3104,7 @@ body{
 	
   </section>
   <!-- end section3 -->
-		    <body onload="google_translate()">
+	<body onload="google_translate()">
     <div id="translation"></div>
 
     <!-- Your other page content goes here -->
@@ -3177,26 +3177,22 @@ body{
     </script>
 </body>
 <style>
-/* General reset and box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Center the translation widget container */
+#translation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh; /* Full viewport height to center vertically */
+    margin-bottom: 0px;
 }
 
-/* Body styling */
+/* Keep the rest of your styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
 }
 
-/* Container for the translation widget */
-#translation {
-    margin-bottom: 0px;
-}
-
-/* Styling for the Google Translate widget */
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
 }
@@ -3205,14 +3201,13 @@ body {
     top: 0px !important;
 }
 
-/* Custom styling for the translation button */
 .goog-te-gadget-simple {
     background-color: #007bff !important; /* Button color */
     border: 2px solid #0056b3 !important; /* Border color */
     border-radius: 4px;
     color: white !important;
     font-size: 16px !important;
-    padding:5px 10px !important;
+    padding: 5px 10px !important;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -3222,17 +3217,14 @@ body {
     border-color: #003f7f !important; /* Hover border color */
 }
 
-/* Customize the translation select box */
 .goog-te-gadget-simple .goog-te-menu-value {
     color: white !important;
 }
 
-/* Hide the Google Translate logo */
 .goog-te-gadget img {
     display: none !important;
 }
 
-/* Style the translation options when the user clicks on the widget */
 .goog-te-menu-frame {
     width: 20% !important;
     height: auto !important;
@@ -3241,7 +3233,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for the scrollable language list */
 .goog-te-menu2 {
     max-height: 10px !important;
     overflow-y: auto !important;
@@ -3249,7 +3240,6 @@ body {
     padding: 1px !important;
 }
 
-/* Individual language options */
 .goog-te-menu2-item {
     padding: 5px 10px !important;
     cursor: pointer;
@@ -3259,12 +3249,11 @@ body {
     background-color: #ddd !important;
 }
 
-/* Responsive iframe styling */
 iframe.goog-te-menu-frame {
     max-width: 20% !important;
     height: auto !important;
 }
-</style>	    
+</style>   
  <style>
 ul {
     margin: 0px;
