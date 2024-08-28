@@ -671,15 +671,15 @@ to {right: 7px;
     });
 </script>
 <style>
-.elementor-background-slideshow {
+      .elementor-background-slideshow {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height for the slideshow */
+    height: 100%;
     overflow: hidden;
     direction: rtl; /* Right-to-left direction */
-    z-index: 1; /* Ensure it's behind other content */
 }
 
+/* Swiper wrapper that contains all slides */
 .swiper-wrapper {
     display: flex;
     flex-direction: column; /* Vertical direction */
@@ -689,33 +689,16 @@ to {right: 7px;
     transition-duration: 0.3s; /* Smooth transition duration */
 }
 
+/* Each slide within the Swiper */
 .elementor-background-slideshow__slide {
     flex: 1 0 100%; /* Each slide takes full height */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover; /* Cover the entire slide */
+    background-size: 105%; /* Ensure the background image covers the entire slide */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent background image repetition */
     position: relative; /* Allows for positioning of text or other content */
-}
-
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
-    .elementor-background-slideshow {
-        height: 60vh; /* Adjust height for smaller screens */
-    }
-
-    .elementor-background-slideshow__slide {
-        background-size: contain; /* Adjust background size for mobile */
-        flex: 1 0 auto; /* Adjust flex behavior */
-    }
-
-    .elementor-background-slideshow__slide .left-aligned-text {
-        font-size: 14px; /* Smaller font size on mobile */
-        left: 10px;
-        top: 10px;
-    }
 }
 
 /* Adjust text alignment for elements inside slides */
@@ -725,17 +708,20 @@ to {right: 7px;
     left: 20px; /* Adjust as needed for your design */
     top: 20px; /* Adjust as needed for your design */
     color: white; /* Example text color */
+
 }
 
+/* Accessibility: visually hide the notification span */
 .swiper-notification {
     position: absolute;
     left: -9999px;
     width: 1px;
     height: 1px;
+
     overflow: hidden;
 }
-</style>
-<div class="elementor-background-slideshow swiper-container">
+    </style>
+<div class="elementor-background-slideshow swiper-container" dir="rtl">
     <div class="swiper-wrapper">
         <div class="elementor-background-slideshow__slide swiper-slide" style="background-image: url('https://d2designs.in/wp-content/uploads/2023/05/tshirt-scaled.jpg');"></div>
         <div class="elementor-background-slideshow__slide swiper-slide" style="background-image: url('https://d2designs.in/wp-content/uploads/2023/05/signage-1-1-scaled.jpg');"></div>
@@ -743,6 +729,13 @@ to {right: 7px;
     </div>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 </div>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
@@ -766,7 +759,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-
 
   <!-- end post-wrapper-top -->
 
