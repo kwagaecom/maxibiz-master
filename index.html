@@ -250,10 +250,21 @@ socialShareButtons.forEach(function (button) {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15px; /* Adjust spacing between items as needed */
+        gap: 15px; /* Spacing between items */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
     }
     .additional-shop-info i {
         margin-right: 5px; /* Space between icon and text */
+    }
+    @media (max-width: 767px) {
+        .additional-shop-info {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+            text-align: center; /* Center text on smaller screens */
+        }
+        .additional-shop-info li {
+            margin-right: 0; /* Remove margin for stacked items */
+            margin-bottom: 10px; /* Add bottom margin for spacing */
+        }
     }
 </style>
 
@@ -269,6 +280,7 @@ socialShareButtons.forEach(function (button) {
         </div>
     </div>
 </div>
+
 
 
 
