@@ -269,26 +269,61 @@ socialShareButtons.forEach(function (button) {
       <div id="myNav" class="overlay">
         <span class="closebtn" onclick="toggleNav()">&times;</span> <!-- Close Button -->
         <div class="overlay-content">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="#">Service</a>
-       <ul class="submenu">
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Appointment</a></li>
-                </ul>
-          <a href="contact.html">Career</a>
-           <a href="#">Appointment</a>
-          <a href="#">Technology</a>
+<br><br><br><br>
+<div class="button-container">
+          <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+          <a href="about.html"><button type="button" class="btn btn-warning">About</button></a>
+          <a href="service-design.html"><button type="button" class="btn btn-success">Service</button></a>
+          <a href="portfolio.html"><button type="button" class="btn btn-danger">Portfolio</button></a>
+           
+           <a href="carieer.html"><button type="button" class="btn btn-dark">Career</button></a>
+          <a href="appointement.html"><button type="button" class="btn btn-info">Appointment</button></a>
+          <a href="technology.html"><button type="button" class="btn btn-warning">Technology</button></a>
 
+</div>
+     <div class="button-container">
+         <a href="interior design.html"><button type="button" class="btn btn-light">Interior Design</button></a
+          <a href="service-design.html"><button type="button" class="btn btn-warning">Service Design</button></a>
+          <a href="developement.html"><button type="button" class="btn btn-success">WebDevelopement</button></a>
+          <a href="advertisement .html"><button type="button" class="btn btn-danger">Ad Service</button></a>
+          
+</div>
+             
+         
+         
+         
          
         </div>
       </div>
     </nav>
   </div>
 </header>
+<style>
 
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+margin-left: 150px; /* Space between buttons */
+margin-right: 150px; /* Space between buttons */
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+</style>
 <!-- CSS -->
 <style>
   .custom_menu-btn button {
