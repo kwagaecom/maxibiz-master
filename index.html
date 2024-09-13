@@ -239,150 +239,117 @@ socialShareButtons.forEach(function (button) {
   </script>
         
   <!-- end topbar -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Basic styling for header */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-        }
-
-        .header .logo img {
-            height: 50px;
-        }
-
-        .header .nav {
-            display: flex;
-            align-items: center;
-        }
-
-        .header .nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        .header .nav ul li {
-            position: relative;
-            margin-right: 20px;
-        }
-
-        .header .nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Submenu styling */
-        .header .nav ul li .submenu {
-            display: none;
-            position: absolute;
-            background-color: #444;
-            top: 35px;
-            left: 0;
-            padding: 10px 0;
-            min-width: 150px;
-        }
-
-        .header .nav ul li:hover .submenu {
-            display: block;
-        }
-
-        .header .nav ul li .submenu li {
-            margin: 0;
-        }
-
-        .header .nav ul li .submenu li a {
-            padding: 10px 20px;
-            display: block;
-        }
-
-        /* Right-side contact info */
-        .header .contact-info {
-            display: flex;
-            align-items: center;
-        }
-
-        .header .contact-info .info {
-            margin-right: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        .header .contact-info .info i {
-            margin-right: 5px;
-        }
-
-        /* Mobile responsive */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-            }
-
-            .header .nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .header .contact-info {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .header .nav ul li {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-
-
-<header class="header">
-    
-    <nav class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
-<div class="logo">
-        <img src="https://via.placeholder.com/150x50" alt="Logo">
-    </div>
-    
-            <li>
-                <a href="#">Service</a>
-                <ul class="submenu">
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Appointment</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Career</a></li>
-        </ul>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <div class="navbar-collapse" id="">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="car.html">Cars</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
     </nav>
-    
-    <div class="contact-info">
-        <div class="info">
-            <i class="fas fa-envelope"></i> <span>email@example.com</span>
-        </div>
-        <div class="info">
-            <i class="fas fa-map-marker-alt"></i> <span>Location</span>
-        </div>
-        <div class="info">
-            <i class="fas fa-phone"></i> <span>+123 456 789</span>
-        </div>
-    </div>
+  </div>
 </header>
 
+<!-- CSS -->
+<style>
+  .custom_menu-btn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
+  .custom_menu-btn button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay-content a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay-content a:hover {
+    color: #f1f1f1;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openNav() {
+    var overlay = document.getElementById("myNav");
+    if (overlay.style.width === "100%") {
+      overlay.style.width = "0";
+    } else {
+      overlay.style.width = "100%";
+    }
+  }
+</script>
+
+
+ <script>
+    $('#editModal').on('show.bs.modal',function(evt){
+    let btn = $(evt.relatedTarget)
+    let title = btn.data('title')
+    let modal = $(this)
+    modal.find('.modal-title').text(title)
+  })
+  
+  $('#removeModal').on('show.bs.modal',function(evt){
+    let btn = $(evt.relatedTarget)
+    let title = btn.data('title')
+    let modal = $(this)
+    modal.find('.modal-title').text('Confirm Deletion'+' :   '+title)
+  })
+  
+  $('#sendModal').on('show.bs.modal',function(evt){
+    let btn = $(evt.relatedTarget)
+    let title = btn.data('title')
+    let modal = $(this)
+    modal.find('.modal-title').text('Double Confirm'+' :   '+title)
+  })
+  </script>
 
   <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
