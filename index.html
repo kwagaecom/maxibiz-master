@@ -239,26 +239,43 @@ socialShareButtons.forEach(function (button) {
   </script>
         
   <!-- end topbar -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <header class="header_section">
+<header class="header_section">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg custom_nav-container">
-      <div class="navbar-collapse" id="">
+      <div class="navbar-collapse d-flex justify-content-between align-items-center">
+        <!-- Left Menu Button (ToggleNav) -->
         <div class="custom_menu-btn">
-          <button onclick="openNav()">
+          <button onclick="toggleNav()">
             <span class="s-1"></span>
             <span class="s-2"></span>
             <span class="s-3"></span>
           </button>
         </div>
-        <div id="myNav" class="overlay">
-          <div class="overlay-content">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="car.html">Cars</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact Us</a>
-          </div>
+
+        <!-- Right Side: Contact Info -->
+       <div class="header_contact-info" style="color:#FF0000;">
+  <a href="mailto:example@email.com">
+    <i class="fas fa-envelope"></i> example@email.com
+  </a>
+  <a href="tel:+123456789">
+    <i class="fas fa-phone"></i> +123456789
+  </a>
+  <a href="https://goo.gl/maps/example" target="_blank">
+    <i class="fas fa-map-marker-alt"></i> Location
+  </a>
+</div>
+
+      </div>
+
+      <!-- Overlay Menu -->
+      <div id="myNav" class="overlay">
+        <span class="closebtn" onclick="toggleNav()">&times;</span> <!-- Close Button -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="car.html">Cars</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
         </div>
       </div>
     </nav>
@@ -277,7 +294,7 @@ socialShareButtons.forEach(function (button) {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #ff9800; /* Toggle button color */
     margin: 4px 0;
   }
 
@@ -313,11 +330,54 @@ socialShareButtons.forEach(function (button) {
   .overlay-content a:hover {
     color: #f1f1f1;
   }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Right-aligned contact info */
+  .header_contact-info {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .header_contact-info a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+  background-color: #FF6347; 
+  }
+
+  .header_contact-info i {
+    margin-right: 5px;
+  }
+
+  /* Align the toggle and contact info side by side */
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header_contact-info a {
+      font-size: 12px;
+    }
+  }
 </style>
 
 <!-- JavaScript -->
 <script>
-  function openNav() {
+  function toggleNav() {
     var overlay = document.getElementById("myNav");
     if (overlay.style.width === "100%") {
       overlay.style.width = "0";
@@ -326,6 +386,7 @@ socialShareButtons.forEach(function (button) {
     }
   }
 </script>
+
 
 
  <script>
