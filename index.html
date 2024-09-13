@@ -240,137 +240,122 @@ socialShareButtons.forEach(function (button) {
         
   <!-- end topbar -->
 <style>
-    .header {
-        background-color: #f8f8f8;
-        padding: 20px;
-    }
-    .navbar-brand {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-    }
-    .navbar-nav > li > a {
-        font-size: 16px;
-    }
-    .header .navbar-toggle {
-        border-color: #ddd;
-    }
-    .header .navbar-toggle .icon-bar {
-        background-color: #888;
+.header {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav > li > a {
+    font-size: 16px;
+}
+
+.header .navbar-toggle {
+    border-color: #ddd;
+}
+
+.header .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+/* Fix for mobile dropdown opening upwards */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        position: relative;
+        top: 0;  /* Make sure it opens below the header */
+        z-index: 1;
     }
 
-    /* Fix for mobile dropdown opening upwards */
-    @media (max-width: 767px) {
-        .navbar-collapse {
-            position: absolute;
-            top: 60px; /* Adjust based on header height */
-            left: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        .navbar-collapse.collapsing,
-        .navbar-collapse.collapse.in {
-            display: block !important;
-        }
+    /* Make sure the dropdown menu pushes content down and not overflows upwards */
+    .navbar-nav {
+        display: block;
+        float: none;
     }
+
+    .navbar-nav li {
+        float: none;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: relative;
+        width: 100%;  /* Full width dropdown for mobile */
+    }
+
+    .navbar-collapse.collapsing,
+    .navbar-collapse.in {
+        display: block !important;  /* Ensure it stays visible */
+    }
+}
 </style>
-
 <div class="header">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand nav-item active" href="#">Kwaga Ltd</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="service-design.html">Design</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="interior-design.html">Interior Design</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="marketing.html">Digital Marketing</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="development.html">Website Development</a></li>
-                    </ul>
-                </li>
-                <li><a href="software-products.html">Software</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="appointment.html">Appointment</a></li>
-                <li><a href="technology.html">Technology</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand nav-item active" href="#">Kwaga Ltd</a>
     </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="service-design.html">Design</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="interior-design.html">Interior Design</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="marketing.html">Digital Marketing</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="development.html">Website Development</a></li>
+          </ul>
+        </li>
+        <!-- Software Products Dropdown -->
+        <li><a href="software-products.html">Software</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.dropdown-toggle').click(function(){
-            var $dropdown = $(this).next('.dropdown-menu');
-            $('.dropdown-menu').not($dropdown).slideUp();
-            $dropdown.slideToggle();
-        });
 
-        $(document).click(function(event) {
-            if (!$(event.target).closest('.dropdown').length) {
-                $('.dropdown-menu').slideUp();
-            }
-        });
+<script>
+  $(document).ready(function(){
+    // Ensure dropdown toggles behave properly
+    $('.dropdown-toggle').click(function(){
+      var $dropdown = $(this).next('.dropdown-menu');
+      $('.dropdown-menu').not($dropdown).slideUp();
+      $dropdown.slideToggle();
     });
+
+    // Close dropdown when clicking outside
+    $(document).click(function(event) {
+      if (!$(event.target).closest('.dropdown').length) {
+        $('.dropdown-menu').slideUp();
+      }
+    });
+  });
 </script>
 
- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-light">
-          <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
- <div class="half">
-                    <div class="mb-3 text-center">
-                        <a href="#"<button class="btn btn-primary btn-block mb-2">Login with Facebook</button></a>
-                        <a href="https://www.google.com/intl/en-US/gmail/about/"<button class="btn btn-danger btn-block mb-2">Login with Google</button></a>
-                    </div>
-                </div>
-                <div class="half">
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Login</button>
-                    </form>
-                </div>
-        </div>
-        <div class="modal-footer footerLink">
-          <a href="#" data-dismiss="modal" class="mr-auto" data-toggle="modal" data-target="#createModal">Switch to
-            registration</a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
  
 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -442,46 +427,7 @@ socialShareButtons.forEach(function (button) {
       </div>
     </div>
   </div>
-  <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
-        }
 
-        strong {
-            color: #2c3e50;
-        }
-
-        p {
-            margin-bottom: 1em;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-info {
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
-            margin-top: 20px;
-        }
-
-        .contact-info p {
-            margin-bottom: 0.5em;
-        }
-
-        .contact-info strong {
-            color: #2980b9;
-        }
-
-    </style>
 
 
 <div id="myModal" class="modal fade" role="dialog">
