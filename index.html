@@ -3308,9 +3308,49 @@ ul {
                                 <h3>Resources</h3>
                             </div>
                             <ul>
-                                <li><a href="software products.html">Products</a></li>
-                                <li><a href="technology.html">Technology</a></li>
-                                <li><a href="carieer.html">Career</a></li>
+      
+  <style>
+    /* Custom styles for mobile responsiveness */
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn-container a {
+      flex: 1 1 calc(50% - 20px); /* Adjusts width for mobile */
+      text-align: center;
+      margin: 5px 0;
+    }
+    @media (min-width: 768px) {
+      .btn-container a {
+        flex: 1 1 auto; /* Adjusts width for larger screens */
+        margin: 0;
+      }
+    }
+  </style>
+
+  <div class="container mt-4">
+    <div class="btn-container">
+      <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+      <a href="about.html"><button type="button" class="btn btn-warning">About</button></a>
+      <a href="service-design.html"><button type="button" class="btn btn-success">Service Design</button></a>
+      <a href="portfolio.html"><button type="button" class="btn btn-danger">Portfolio</button></a>
+      <a href="career.html"><button type="button" class="btn btn-dark">Career</button></a>
+      <a href="appointment.html"><button type="button" class="btn btn-info">Appointment</button></a>
+      <a href="technology.html"><button type="button" class="btn btn-warning">Technology</button></a>
+      <a href="interior-design.html"><button type="button" class="btn btn-light">Interior Design</button></a>
+      <a href="development.html"><button type="button" class="btn btn-success">Web Development</button></a>
+      <a href="advertisement.html"><button type="button" class="btn btn-danger">Ad Service</button></a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
                             
                             </ul>
                         </div>
@@ -3319,27 +3359,80 @@ ul {
             </div>
         </div>
         <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2013, All Right Reserved <a href="https://codepen.io/anupkumar92/">Kwaga Ltd</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                           <ul>
-                                
-                                <li><a href="Terms of Service.html">Terms</a></li>
-                                <li><a href="privacy policy.html">Privacy</a></li>
-                                <li><a href="cookies policy.html">Cookies Policy</a></li>
-                               <li><a href="sitemap.html">Site Map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Contact Information -->
+<div class="contact-info" style="text-align: right; margin-right: 30px; margin-bottom: 20px;">
+  <div>
+    <b>Contact:</b> +91 8797529661
+    <span style="margin-left: 20px;">
+      <b>Email:</b> <a href="mailto:service@kwagaltd.com">service@kwagaltd.com</a>
+    </span>
+  </div>
+</div>
+
+<!-- Copyright Section -->
+<style>
+    .copyright {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f8f9fa;
+        border-top: 1px solid #e0e0e0;
+    }
+    .copyright span {
+        display: inline-block;
+        margin-left: 50px;
+        color: #333;
+        font-size: 14px;
+    }
+    .copyright strong span {
+        color: #007bff; /* Change this to your preferred color */
+    }
+    .credits {
+        text-align: center;
+        margin-top: 10px;
+        color: #555;
+    }
+    .credits a {
+        text-decoration: none;
+        color: #007bff;
+    }
+</style>
+
+<div align="center" class="copyright">
+    <span>&copy; Copyright <strong><span id="yearSpan"></span> KWAGA WEBSITE DEVELOPEMENT COMPANY</strong>. All Rights Reserved</span>
+</div>
+<div  style="text-align: left; margin-right: 30px;"class="credits">
+    <span>Powered By <a href="https://company.kwaga.ltd/"><span class="badge bg-primary">KwagaWebDev</span></a></span>
+</div>
+
+<script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    // Calculate the next year
+    const nextYear = currentYear + 1;
+    // Set the text in the span
+    document.getElementById('yearSpan').textContent = `${currentYear}-${nextYear}`;
+</script>
+</br></br>
+<!-- Button with Badges and Stars -->
+<div class="contact-info" style="text-align: right; margin-right: 30px;">
+  <button type="button" class="btn btn-primary" style="display: flex; align-items: center; padding: 10px 20px;">
+    <h5 style="margin: 0;">
+      <span class="badge bg-primary">K</span>
+      <span class="badge bg-secondary">W</span>
+      <span class="badge bg-danger">D</span>
+      <span class="badge bg-success">4.7</span>
+      <span class="badge bg-info">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </span>
+    </h5>
+  </button>
+</div>
     </footer>
   <!-- end footer -->
   <div class="dmtop">Scroll to Top</div>
