@@ -211,288 +211,202 @@ socialShareButtons.forEach(function (button) {
 });
 
   </script>
- <style>
-    body {
-      margin: 15px;
-    }
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <div class="navbar-collapse d-flex justify-content-between align-items-center">
+        <!-- Left Menu Button (ToggleNav) -->
+        <div class="custom_menu-btn">
+          <button onclick="toggleNav()">
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
+          </button>
+        </div>
 
-    .dropdown-menu > ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+        <!-- Right Side: Contact Info -->
+       <div class="header_contact-info" style="color:#FF0000;">
+ 
+  <a href="tel:+123456789">
+    <i class="fas fa-phone"></i> +91 8797529661
+  </a>
+  <a href="https://www.justdial.com/jdmart/Patna/Kwaga-Web-Dev--Ramganj/0612PX612-X612-240212130918-R6C4_BZDET/catalogue?ref=auto&searchfrom=auto|home" target="_blank">
+    <i class="fas fa-map-marker-alt"></i> Ramganj,Patna
+  </a>
+</div>
 
-    .dropdown-menu > ul > li > a {
-      display: block;
-      padding: 3px 20px;
-      clear: both;
-      font-weight: 400;
-      color: #333;
-      white-space: nowrap;
-    }
+      </div>
 
-    @media(min-width:992px) {
-      .nav > li {
-        position: initial;
-      }
-      .open > .dropdown-menu {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin: 60px 0 0 0;
-      }
-      .dropdown-menu > ul {
-        float: left;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        flex-grow: 1;
-      }
-      .dropdown-menu > ul + ul {
-        border-left: 1px solid #e5e5e5;
-      }
-    }
+      <!-- Overlay Menu -->
+      <div id="myNav" class="overlay">
+        <span class="closebtn" onclick="toggleNav()">&times;</span> <!-- Close Button -->
+        <div class="overlay-content">
 
-    @media (max-width: 991px) {
-      .navbar-header {
-        float: none;
-      }
-      .navbar-left,
-      .navbar-right {
-        float: none !important;
-      }
-      .navbar-toggle {
-        display: block;
-      }
-      .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-      }
-      .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-      }
-      .navbar-collapse.collapse {
-        display: none!important;
-      }
-      .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-      }
-      .navbar-nav > li {
-        float: none;
-      }
-      .navbar-nav > li > a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      .collapse.in {
-        display: block !important;
-      }
-      .dropdown-menu {
-        position: relative;
-        width: 100%;
-        float: left;
-      }
-      .navbar-nav .open .dropdown-menu {
-        position: static;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        box-shadow: none;
-      }
-    }
-.nav-item.active {
-    color: #fff; /* White text */
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); /* Gradient background */
-    padding: 1px;
-    border-radius: 1px;
+<div class="button-container">
+          <a href="index.html"><button type="button" class="btn btn-primary">Home</button></a>
+          <a href="about.html"><button type="button" class="btn btn-warning">About</button></a>
+</div>
+<div class="button-container">
+          <a href="service-design.html"><button type="button" class="btn btn-success">Service</button></a>
+          <a href="portfolio.html"><button type="button" class="btn btn-danger">Portfolio</button></a>
+</div>
+<div class="button-container">
+           <a href="carieer.html"><button type="button" class="btn btn-dark">Career</button></a>
+          <a href="appointement.html"><button type="button" class="btn btn-info">Appointment</button></a>
+</div>
+<div class="button-container">
+ <a href="technology.html"><button type="button" class="btn btn-warning">Technology</button></a>
+<a href="interior design.html"><button type="button" class="btn btn-light">Interior Design</button></a>
+</div>
+     <div class="button-container">
+         <a href="service-design.html"><button type="button" class="btn btn-warning">Service Design</button></a>
+          <a href="developement.html"><button type="button" class="btn btn-success">WebDevelopement</button></a>
+</div>
+<div class="button-container">
+          <a href="advertisement .html"><button type="button" class="btn btn-danger">Ad Service</button></a>
+</div>
+          
+</div>
+             
+         
+         
+         
+         
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<style>
+
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+margin-left: 100px; /* Space between buttons */
+margin-right: 100px; /* Space between buttons */
 }
 
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-  </style>
+.btn-primary {
+    background-color: #007bff;
+}
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      <a class="navbar-brand" class="nav-item active" href="index.html">Kwaga Ltd</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="about.html">About Us <span class="sr-only">(current)</span></a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-            <div class="dropdown-menu">
-              <ul>
-                <li><a href="service-design.html">Design</a></li>
-               <li role="separator" class="divider"></li>
-                <li><a href="#">Logo Design</a></li>
-                <li><a href="#">Card Design</a></li>
-                <li><a href="#">Catlogue Design</a></li>
-                <li><a href="#">Flex banner Design</a></li>
-                <li><a href="#">Bill book Design</a></li>
-                
-              </ul>
-              <ul>
-                <li><a href="#">Graphic Design</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Latherhead Design</a></li>
-               <li><a href="#">Removing Background Passport Size Photo</a></li>
-                <li><a href="#">Email Signature</a></li>
-                <li><a href="#">Social Media Cover Page Design</a></li>
-                <li><a href="#">Domain Based Email Creation</a></li>
-               
-               
-                
-              </ul>
-              <ul>
-                <li><a href="interior design.html">Interior Design</a></li>
-                
-              </ul>
-              <ul>
-                <li><a href="marketing.html">Digital Marketing</a></li>
-                <li role="separator" class="divider"></li>
-               
-                <li role="separator" class="divider"></li>
-                <li><a href="marketing -seo.html">SE0</a></li>
-                <li><a href="marketing -SEM.html">SEM</a></li>
-                <li><a href="marketing -SMM.html">SMM</a></li>
-                <li role="separator" class="divider"></li>
-                 <li><a href="marketing -video editing.html">Video & Editing </a></li>
-                 <li><a href="marketing -content.html">Content Creation</a></li>
-              </ul>
-              <ul>
-                <li><a href="developement.html">Website Developement</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="developement-cms.html">CMS</a></li>
-                <li><a href="developement-framework.html">FrameWork</a></li>
-                <li><a href="developement-blogger.html">Blogger</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="developement-maintainenace.html">Website Maintainenece</a></li>
-                <li><a href="developement-reconstrunction.html">Website Reconstrunction</a></li>
-                <li role="separator" class="divider"></li>
-              
-              
-              </ul>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software Products <span class="caret"></span></a>
-            <div class="dropdown-menu">
-              <ul>
-                <li><a href="software products.html">Software</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="SoftwareGST.html">Billing Software</a></li>
-                <li><a href="software school .html">School Software</a></li>
-                 <li><a href="Software Retail.html">Retail Software</a></li>
-                <li><a href="Software Currior.html">Currior Software</a></li>
-                <li><a href="Software office.html">Office Software</a></li>
-              </ul>
-              <ul>
-                <li role="separator" class="divider"></li>
-  <li role="separator" class="divider"></li>
-  <li role="separator" class="divider"></li>
-  <li role="separator" class="divider"></li>
-                
-                <li><a href="software showroom.html">Showroom Software</a></li>
-                <li><a href="software pharmacy.html">Pharmacy Software</a></li>
-                <li><a href="software hospital.html">Hospital Software</a></li>
-                <li><a href="Software supermarket.html">SuperMarket Software</a></li>
-                <li><a href="Software IVR .html">IVR Software</a></li>
-                <li><a href="softwareHRM.html">HRM Software</a></li>
-                <li><a href="software MLM.html">MLM Software</a></li>
-                <li><a href="software instiute.html">Instiute Software</a></li>
-              </ul>
-            </div>
-          </li>
-<li><a href="carieer.html">Career</a></li>
+.btn-secondary {
+    background-color: #6c757d;
+}
+</style>
+<!-- CSS -->
+<style>
+  .custom_menu-btn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
-<li><a href="appointement.html">Appointement</a></li>
- <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Techonology <span class="caret"></span></a>
-            <div class="dropdown-menu">
-              <ul>
-                <li><a href="technology.html">Techonology</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="technology -HTML.html">HTML5</a></li>
-                <li><a href="technology -react.html">React</a></li>
-                <li><a href="technology -sql.html">SQL</a></li>
-                <li><a href="technology -jquery.htm">Jquery</a></li>
-              </ul>
-              <ul>
-                <li role="separator" class="divider"></li>
-  <li role="separator" class="divider"></li>
-  <li role="separator" class="divider"></li>
-  <li role="separator" class="divider"></li>
-                <li><a href="technology -bootstrap5.html">Bootstrap</a></li>
-                <li><a href="technology -python.html">Python</a></li>
-                <li><a href="technology -dotnet.html">Dotnet</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="technology -java.html">Java</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="technology -CSS3.html">CSS3</a></li>
-                <li><a href="technology -larvel.html">Larvel</a></li>
-              </ul>
-            </div>
-          </li>
-    <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Paid Advertisement <span class="caret"></span></a>
-            <div class="dropdown-menu">
-              <ul>
-               <li><a href="advertisement .html">Advertisement Service</a></li>
-               <li role="separator" class="divider"></li>   
-                <li role="separator" class="divider"></li>
-                <li><a href="advertisement-digital.html">Digital</a></li>
-                <li><a href="advertisement-socialdigital.html">Social Media</a></li>
-                <li><a href="advertisement-direct.html">Direct</a></li>
-                
-                <li><a href="advertisement-tradational.html">Tradational</a></li>
-              </ul>
-              
-            </div>
-          </li>
-        </ul>
+  .custom_menu-btn button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ff9800; /* Toggle button color */
+    margin: 4px 0;
+  }
 
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
 
-<!-- <ul class="nav navbar-nav navbar-right">
-          
-           <li> <a class="btn btn-outline-dark mr-2 btn-sm" data-toggle="modal" data-target="#loginModal"
-          href="">Log in</a></li>
-           <li><a class="btn btn-dark btn-sm" data-toggle="modal" data-target="#createModal" href="">Create</a></li>
-          
-      </ul>-->
-      </div>
-    </div>
-  </nav>
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.dropdown-toggle').click(function(){
-        var $dropdown = $(this).next('.dropdown-menu');
-        $('.dropdown-menu').not($dropdown).slideUp();  // Close all other dropdowns
-        $dropdown.slideToggle();  // Toggle the clicked dropdown
-      });
+  .overlay-content a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
 
-      $(document).click(function(event) {
-        if (!$(event.target).closest('.dropdown').length) {
-          $('.dropdown-menu').slideUp();  // Close dropdowns if clicking outside
-        }
-      });
-    });
-  </script>
+  .overlay-content a:hover {
+    color: #f1f1f1;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Right-aligned contact info */
+  .header_contact-info {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .header_contact-info a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+  background-color: #FF6347; 
+  }
+
+  .header_contact-info i {
+    margin-right: 5px;
+  }
+
+  /* Align the toggle and contact info side by side */
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header_contact-info a {
+      font-size: 12px;
+    }
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function toggleNav() {
+    var overlay = document.getElementById("myNav");
+    if (overlay.style.width === "100%") {
+      overlay.style.width = "0";
+    } else {
+      overlay.style.width = "100%";
+    }
+  }
+</script>
   <!-- end header -->
 <style>
 
@@ -582,10 +496,7 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-.footer-section {
-  background: #151414;
-  position: relative;
-}
+
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
@@ -627,153 +538,31 @@ ul {
 .footer-logo img {
     max-width: 200px;
 }
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-      color: #7e7e7e;
-  line-height: 28px;
-}
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px;
-}
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-}
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
-}
-.facebook-bg{
-  background: #3B5998;
-}
-.twitter-bg{
-  background: #55ACEE;
-}
-.google-bg{
-  background: #DD4B39;
-}
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
-}
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #ff5e14;
-}
-.footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
-}
-.footer-widget ul li a:hover{
-  color: #ff5e14;
-}
-.footer-widget ul li a {
-  color: #878787;
-  text-transform: capitalize;
-}
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-.subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
-}
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
-  background: #202020;
-  padding: 25px 0;
-}
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-}
-.copyright-text p a{
-  color: #ff5e14;
-}
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.footer-menu li:hover a{
-  color: #ff5e14;
-}
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
-}
- </style>
-<footer class="footer-section">
 
-        <div class="container">
+
+ </style>
+   <footer class="footer-section">
+
+        <div align="center"class="container">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            
-                            <div class="cta-text">
-                                <i class="fa fas fa-map-marker-alt"></i>
-
-                                <span>Patna,Bihar 804051</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                           
-                            <div class="cta-text">
-                                <i class="fa fas fa-phone"></i>
-
-
-                                <span>7838090428</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            
-                            <div class="cta-text">
-                                <i class="fa fas fa-envelope"></i>
-                                <span>service@kwaga.ltd</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="contact-info" style=" margin-right: 430px;">
+  <button type="button" class="btn btn-primary" style="display: flex; align-items: center; padding: 10px 20px;">
+    <h5 style="margin: 0;">
+      <span class="badge bg-primary">K</span>
+      <span class="badge bg-secondary">W</span>
+      <span class="badge bg-danger">D</span>
+      <span class="badge bg-success">4.7</span>
+      <span class="badge bg-info">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </span>
+    </h5>
+  </button>
+</div>
                 </div>
             </div>
             <div class="footer-content pt-5 pb-5">
@@ -783,70 +572,97 @@ ul {
                             <div class="footer-logo">
                                 <a href="index.html"><img src="img/logo-removebg-preview1.png" class="img-fluid" alt="logo"></a>
                             </div>
-                            <div class="footer-text">
-                                <p align="justify">"Transforming visions into seamless digital experiences, Kwaga’s web developers craft intuitive and robust websites tailored to your needs."</p>
-                            </div>
-                            <!----<div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-linkdin-bg"></i></a>
-                            </div>--->
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Information</h3>
-                            </div>
-                            <ul>
+                             <style>
+    /* Custom styles for mobile responsiveness */
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn-container a {
+      flex: 1 1 calc(50% - 20px); /* Adjusts width for mobile */
+      text-align: center;
+      margin: 5px 0;
+    }
+    @media (min-width: 768px) {
+      .btn-container a {
+        flex: 1 1 auto; /* Adjusts width for larger screens */
+        margin: 0;
+      }
+    }
+  </style>
+
+  <div class="container mt-4">
+    <div class="btn-container">
+    
+         <a href="index.html"><span class="badge rounded-pill bg-primary">Home</span></a>
+      <a href="about.html"><span class="badge rounded-pill bg-secondary">About</button></a>
+      <a href="service-design.html"><span class="badge rounded-pill bg-info">Service Design</button></a>
+      <a href="portfolio.html"><span class="badge rounded-pill bg-danger">Portfolio</button></a>
+      <a href="career.html"><span class="badge rounded-pill bg-dark">Career</button></a>
+      <a href="appointment.html"><span class="badge rounded-pill bg-light">Appointment</button></a>
+      <a href="technology.html"><span class="badge rounded-pill bg-secondary">Technology</button></a>
+      <a href="interior-design.html"><span class="badge rounded-pill bg-primary">Interior Design</button></a>
+      <a href="development.html"><span class="badge rounded-pill bg-info">Web Development</button></a>
+      <a href="advertisement.html"><span class="badge rounded-pill bg-danger">Ad Service</button></a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
                             
-                                <li><a href="about.html">about</a></li>
-                                <li><a href="service-design.html">services</a></li>
-                                <li><a href="portfolio.html">portfolio</a></li>
-                                <li><a href="appointement.html">Appointement</a></li>
-                               
-                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Resources</h3>
-                            </div>
-                            <ul>
-                                <li><a href="software products.html">Products</a></li>
-                                <li><a href="technology-detail.html">Technology</a></li>
-                                <li><a href="carieer.html">Career</a></li>
-                               
-                            </ul>
-                        </div>
-                    </div>
+                   
+                    
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2013, All Right Reserved <a href="https://codepen.io/anupkumar92/">Kwaga Ltd</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                
-                                <li><a href="Terms of Service.html">Terms</a></li>
-                                <li><a href="privacy policy.html">Privacy</a></li>
-                                <li><a href="cookies policy.html">Cookies Policy</a></li>
-                               <li><a href="#">Site Map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <style>
+    .copyright {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f8f9fa;
+        border-top: 1px solid #e0e0e0;
+    }
+    .copyright span {
+        display: inline-block;
+        margin-left: 50px;
+        color: #333;
+        font-size: 14px;
+    }
+    .copyright strong span {
+        color: #007bff; /* Change this to your preferred color */
+    }
+    .credits {
+        text-align: center;
+        margin-top: 10px;
+        color: #555;
+    }
+    .credits a {
+        text-decoration: none;
+        color: #007bff;
+    }
+</style>
+
+<div align="center" class="copyright">
+    <span>&copy; Copyright <strong><span id="yearSpan"></span> <br>KWAGA WEBSITE DEVELOPEMENT COMPANY</br></strong>. All Rights Reserved</span>
+</div>
+
+
+<script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    // Calculate the next year
+    const nextYear = currentYear + 1;
+    // Set the text in the span
+    document.getElementById('yearSpan').textContent = `${currentYear}-${nextYear}`;
+</script>
+</br></br>
+<!-- Button with Badges and Stars -->
+
     </footer>
   <!-- end footer -->
   <div class="dmtop">Scroll to Top</div>
