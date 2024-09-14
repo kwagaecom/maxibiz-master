@@ -414,251 +414,217 @@ margin-right: 100px; /* Space between buttons */
   <!-- end header -->
 
   <!-- end section -->
-   <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: "Inter", Arial, Helvetica, sans-serif;
-            background-image: url('https://blog.ipleaders.in/wp-content/uploads/2019/12/Internship-Program.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-        .formbold-mb-5 {
-            margin-bottom: 20px;
-        }
-        .formbold-pt-3 {
-            padding-top: 12px;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        background-image: url('https://blog.ipleaders.in/wp-content/uploads/2019/12/Internship-Program.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+    .formbold-mb-5 {
+        margin-bottom: 20px;
+    }
+    .formbold-pt-3 {
+        padding-top: 12px;
+    }
+    .formbold-main-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px;
+    }
+    .formbold-form-wrapper {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .formbold-form-label {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        color: #07074d;
+        margin-bottom: 12px;
+    }
+    .formbold-form-input {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        background: white;
+        font-weight: 500;
+        font-size: 16px;
+        color: #6b7280;
+        outline: none;
+        resize: none;
+    }
+    .formbold-btn {
+        text-align: center;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 14px 32px;
+        border: none;
+        font-weight: 600;
+        background-color: #6a64f1;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
         .formbold-main-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 48px;
+            padding: 24px;
         }
         .formbold-form-wrapper {
-            margin: 0 auto;
-            max-width: 550px;
-            width: 100%;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .formbold-form-label {
-            display: block;
-            font-weight: 500;
-            font-size: 16px;
-            color: #07074d;
-            margin-bottom: 12px;
-        }
-        .formbold-form-label-2 {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .formbold-form-input {
-            width: 100%;
-            padding: 12px 24px;
-            border-radius: 6px;
-            border: 1px solid #e0e0e0;
-            background: white;
-            font-weight: 500;
-            font-size: 16px;
-            color: #6b7280;
-            outline: none;
-            resize: none;
-        }
-        .formbold-form-input:focus {
-            border-color: #6a64f1;
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+            padding: 16px;
         }
         .formbold-btn {
-            text-align: center;
-            font-size: 16px;
-            border-radius: 6px;
-            padding: 14px 32px;
-            border: none;
-            font-weight: 600;
-            background-color: #6a64f1;
-            color: white;
-            width: 100%;
-            cursor: pointer;
+            font-size: 14px;
+            padding: 12px 28px;
         }
-        .formbold-btn:hover {
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-        }
-        .formbold--mx-3 {
-            margin-left: -12px;
-            margin-right: -12px;
-        }
-        .formbold-px-3 {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-        .flex {
-            display: flex;
-        }
-        .flex-wrap {
-            flex-wrap: wrap;
-        }
-        .w-full {
-            width: 100%;
-        }
-        @media (min-width: 540px) {
-            .sm\:w-half {
-                width: 50%;
-            }
-        }
-    </style>
+    }
+</style>
 
-    <div class="formbold-main-wrapper">
-        <div class="formbold-form-wrapper">
-            <div class="panel-heading panel-title">
-                <h3 class="s3-fs-xs-3" align="center" style="color:#782f40;">Internship Program Application</h3>
-                <h6 align="center">Techonology</h6>
-            </div>
-            <div class="panel-body">
-               <form id="contactForm">
-    <p>Please complete all areas:</p>
-
-    <div class="form-row">
-        <div class="form-group col-12 col-md-6">
-            <label for="InputFName">First Name</label>
-            <input type="text" class="form-control" id="InputFName" name="First Name" placeholder="First Name" required>
+<div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+        <div class="panel-heading panel-title">
+            <h3 class="s3-fs-xs-3 text-center" style="color:#782f40;">Internship Program Application</h3>
+            <h6 class="text-center">Technology</h6>
         </div>
-        <div class="form-group col-12 col-md-6">
-            <label for="InputLName">Last Name</label>
-            <input type="text" class="form-control" id="InputLName" name="Last Name" placeholder="Last Name" required>
+        <div class="panel-body">
+           <form id="contactForm">
+                <p>Please complete all areas:</p>
+                
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-6">
+                        <label for="InputFName">First Name</label>
+                        <input type="text" class="form-control" id="InputFName" name="First Name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                        <label for="InputLName">Last Name</label>
+                        <input type="text" class="form-control" id="InputLName" name="Last Name" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-6">
+                        <label for="InputEmail">E-mail</label>
+                        <input type="email" class="form-control" id="InputEmail" name="E-mail" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                        <label for="InputTel">Phone</label>
+                        <input type="tel" class="form-control" id="InputTel" name="Phone" placeholder="Phone Number" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label for="InputAddress1">Address 1</label>
+                        <input type="text" class="form-control" id="InputAddress1" name="Address" placeholder="Street Address" required>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="InputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="InputAddress2" name="Apartment" placeholder="Apartment #, Suite, etc.">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-6">
+                        <label for="InputCity">City</label>
+                        <input type="text" class="form-control" id="InputCity" name="City" placeholder="City" required>
+                    </div>
+                    <div class="form-group col-6 col-md-3">
+                        <label for="InputState">State</label>
+                        <input type="text" class="form-control" id="InputState" name="State" placeholder="State" required>
+                    </div>
+                    <div class="form-group col-6 col-md-3">
+                        <label for="InputZip">Zip</label>
+                        <input type="number" class="form-control" id="InputZip" name="Zip" placeholder="Zip Code" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputPAN">PAN Card ID</label>
+                    <input type="text" class="form-control" id="InputPAN" name="PAN Card" placeholder="PAN Card #" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Application Date</label>
+                    <input type="date" class="form-control" name="Date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Area of Knowledge</label>
+                    <select id="service" name="Area of Knowledge" class="form-control" required>
+                        <option value="" disabled selected>Select Your Area of Knowledge</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="Bootstrap">Bootstrap</option>
+                        <option value="Python">Python</option>
+                        <option value="C/C++">C/C++</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Have you attended an Internship Previously?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Internship Status" id="optionsRadios1" value="Yes" required>
+                        <label class="form-check-label" for="optionsRadios1">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Internship Status" id="optionsRadios2" value="No" required>
+                        <label class="form-check-label" for="optionsRadios2">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputBiodataURL">Biodata URL</label>
+                    <input type="url" class="form-control" id="InputBiodataURL" name="Biodata URL" placeholder="https://" required>
+                </div>
+
+                <p>Recommendations:</p>
+
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-4">
+                        <label for="InputR1Name">Recommender 1</label>
+                        <input type="text" class="form-control" id="InputR1Name" name="Recommender[]" placeholder="First and Last Name" required>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="InputR1Email">Email</label>
+                        <input type="email" class="form-control" id="InputR1Email" name="RecommenderEmail[]" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="InputR1Type">Title</label>
+                        <input type="text" class="form-control" id="InputR1Type" name="RecommenderTitle[]" placeholder="Recommender Title" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-4">
+                        <label for="InputR2Name">Recommender 2</label>
+                        <input type="text" class="form-control" id="InputR2Name" name="Recommender[]" placeholder="First and Last Name" required>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="InputR2Email">Email</label>
+                        <input type="email" class="form-control" id="InputR2Email" name="RecommenderEmail[]" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="InputR2Type">Title</label>
+                        <input type="text" class="form-control" id="InputR2Type" name="RecommenderTitle[]" placeholder="Recommender Title" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="formbold-btn">Submit</button>
+            </form>
         </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-12 col-md-6">
-            <label for="InputEmail">E-mail</label>
-            <input type="email" class="form-control" id="InputEmail" name="E-mail" placeholder="E-mail" required>
-        </div>
-        <div class="form-group col-12 col-md-6">
-            <label for="InputTel">Phone</label>
-            <input type="tel" class="form-control" id="InputTel" name="Phone" placeholder="Phone Number" required>
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-12">
-            <label for="InputAddress1">Address 1</label>
-            <input type="text" class="form-control" id="InputAddress1" name="Address" placeholder="Street Address" required>
-        </div>
-        <div class="form-group col-12">
-            <label for="InputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="InputAddress2" name="Apartment" placeholder="Apartment #, Suite, etc.">
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-12 col-md-6">
-            <label for="InputCity">City</label>
-            <input type="text" class="form-control" id="InputCity" name="City" placeholder="City" required>
-        </div>
-        <div class="form-group col-6 col-md-3">
-            <label for="InputState">State</label>
-            <input type="text" class="form-control" id="InputState" name="State" placeholder="State" required>
-        </div>
-        <div class="form-group col-6 col-md-3">
-            <label for="InputZip">Zip</label>
-            <input type="number" class="form-control" id="InputZip" name="Zip" placeholder="Zip Code" required>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label for="InputPAN">PAN Card ID</label>
-        <input type="text" class="form-control" id="InputPAN" name="PAN Card" placeholder="PAN Card #" required>
-    </div>
-
-    <hr />
-
-    <div class="form-group">
-        <label for="date">Application Date</label>
-        <input type="date" class="form-control" name="Date" id="date" required>
-    </div>
-
-    <div class="form-group">
-        <label for="service">Area of Knowledge</label>
-        <select id="service" name="Area of Knowledge" class="form-control" required>
-            <option value="" disabled selected>Select Your Area of Knowledge</option>
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="Bootstrap">Bootstrap</option>
-            <option value="Python">Python</option>
-            <option value="C/C++">C/C++</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <p>Have you attended an Internship Previously?</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="Internship Status" id="optionsRadios1" value="Yes" required>
-            <label class="form-check-label" for="optionsRadios1">Yes</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="Internship Status" id="optionsRadios2" value="No" required>
-            <label class="form-check-label" for="optionsRadios2">No</label>
-        </div>
-    </div>
-
-    <hr />
-
-    <div class="form-group">
-        <label for="InputBiodataURL">Biodata URL</label>
-        <input type="url" class="form-control" id="InputBiodataURL" name="Biodata URL" placeholder="https://" required>
-    </div>
-
-    <hr />
-
-    <p>Recommendations:</p>
-
-    <div class="form-row">
-        <div class="form-group col-12 col-md-4">
-            <label for="InputR1Name">Recommender 1</label>
-            <input type="text" class="form-control" id="InputR1Name" name="Recommender[]" placeholder="First and Last Name" required>
-        </div>
-        <div class="form-group col-12 col-md-4">
-            <label for="InputR1Email">Email</label>
-            <input type="email" class="form-control" id="InputR1Email" name="RecommenderEmail[]" placeholder="E-mail" required>
-        </div>
-        <div class="form-group col-12 col-md-4">
-            <label for="InputR1Type">Title</label>
-            <input type="text" class="form-control" id="InputR1Type" name="RecommenderTitle[]" placeholder="Recommender Title" required>
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-12 col-md-4">
-            <label for="InputR2Name">Recommender 2</label>
-            <input type="text" class="form-control" id="InputR2Name" name="Recommender[]" placeholder="First and Last Name" required>
-        </div>
-        <div class="form-group col-12 col-md-4">
-            <label for="InputR2Email">Email</label>
-            <input type="email" class="form-control" id="InputR2Email" name="RecommenderEmail[]" placeholder="E-mail" required>
-        </div>
-        <div class="form-group col-12 col-md-4">
-            <label for="InputR2Type">Title</label>
-            <input type="text" class="form-control" id="InputR2Type" name="RecommenderTitle[]" placeholder="Recommender Title" required>
-        </div>
-    </div>
-
-    <hr />
-
-    <button type="submit" class="btn btn-block btn-primary">Submit</button>
-</form>
-
-            </div>
-        </div>
-    </div>
-
-    <script>
+ <script>
         document.getElementById("contactForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
@@ -676,6 +642,8 @@ margin-right: 100px; /* Space between buttons */
         });
     </script>
     </div>
+</div>
+
 
  <style>
 ul {
