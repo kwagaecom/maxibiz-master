@@ -422,65 +422,55 @@ margin-right: 100px; /* Space between buttons */
 
  
                 <style>
-.gallery-block.grid-gallery{
-  padding-bottom: 60px;
-  padding-top: 60px;
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.gallery-block.grid-gallery .heading{
-    margin-bottom: 50px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
 }
 
-.gallery-block.grid-gallery .heading h2{
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-
-.gallery-block.grid-gallery a:hover{
-  opacity: 0.8;
-}
-
-.gallery-block.grid-gallery .item img{
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  transition: 0.4s;
-}
-
-.gallery-block.grid-gallery .item{
-  margin-bottom: 20px;
-}
-
-@media (min-width: 576px) {
-
-  .gallery-block.grid-gallery .scale-on-hover:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
-  }
-}
-
-img {
-	// -webkit-filter: sepia(0.7);
-	-webkit-filter: hue-rotate(210deg) saturate(10);
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* adjust opacity as needed */
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 
-.item:hover .overlay {
-    opacity: 1;
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0.5rem;
+    flex: 1 1 30%;
+    min-width: 250px; /* Ensures boxes fit on smaller screens */
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
