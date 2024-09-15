@@ -487,7 +487,7 @@ margin-right: 100px; /* Space between buttons */
       }
     }
   </style>
-
+<form id="contactForm">
   <h1 align="center">
     <span class="badge bg-danger">Product </span>
     <span class="badge bg-warning">Purchase</span>
@@ -504,61 +504,61 @@ margin-right: 100px; /* Space between buttons */
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="webdev" class="form-check-input" id="webdev" />
+                  <input type="checkbox" name="SoftwareType" value="Billing Software"class="form-check-input" id="webdev" />
                   <label for="webdev">Billing Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="webdes" class="form-check-input" id="webdes" />
+                  <input type="checkbox" name="SoftwareType" value="School Software" class="form-check-input" id="webdes" />
                   <label for="webdes">School Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="logodes" class="form-check-input" id="logodes1" />
+                  <input type="checkbox" name="SoftwareType"value="Retail Software"  class="form-check-input" id="logodes1" />
                   <label for="logodes1">Retail Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="others" class="form-check-input" id="others1" />
+                  <input type="checkbox" name="SoftwareType" value="Currior Software" class="form-check-input" id="others1" />
                   <label for="others1">Currior Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="logodes" class="form-check-input" id="logodes2" />
+                  <input type="checkbox" name="SoftwareType" value="Office Software" class="form-check-input" id="logodes2" />
                   <label for="logodes2">Office Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="others" class="form-check-input" id="others2" />
+                  <input type="checkbox" name="SoftwareType" value="Showroom Software" class="form-check-input" id="others2" />
                   <label for="others2">Showroom Software</label>
                 </div>
               </div>
               
               <div class="col-md-6 col-sm-12">
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="logodes" class="form-check-input" id="logodes3" />
+                  <input type="checkbox" name="SoftwareType" value="Pharmacy Software" class="form-check-input" id="logodes3" />
                   <label for="logodes3">Pharmacy Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="others" class="form-check-input" id="others3" />
+                  <input type="checkbox" name="SoftwareType"value="Hospital Software"  class="form-check-input" id="others3" />
                   <label for="others3">Hospital Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="logodes" class="form-check-input" id="logodes4" />
+                  <input type="checkbox" name="SoftwareType" value="SuperMarket Software" class="form-check-input" id="logodes4" />
                   <label for="logodes4">SuperMarket Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="others" class="form-check-input" id="others4" />
+                  <input type="checkbox" name="SoftwareType" value="IVR Software" class="form-check-input" id="others4" />
                   <label for="others4">IVR Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="logodes" class="form-check-input" id="logodes5" />
+                  <input type="checkbox" name="SoftwareType" value="HRM Software" class="form-check-input" id="logodes5" />
                   <label for="logodes5">HRM Software</label>
                 </div>
                 <div class="d-flex flex-wrap align-items-center mb-3">
-                  <input type="checkbox" name="others" class="form-check-input" id="others5" />
+                  <input type="checkbox" name="SoftwareType" value="MLM Software" class="form-check-input" id="others5" />
                   <label for="others5">MLM Software</label>
                 </div>
               </div>
             </div>
           </div>
 
-          <form id="contactForm">
+          
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Your Full Name" required aria-label="Full Name">
             
@@ -583,23 +583,7 @@ margin-right: 100px; /* Space between buttons */
               <option value="Other">Other</option>
             </select>
             
-            <label for="software">Preferred Software</label>
-            <select id="software" name="software" required aria-label="Preferred Software">
-              <option value="" disabled selected>Select your preferred software</option>
-              <option value="Billing Software">Billing Software</option>
-              <option value="Pharmacy Software">Pharmacy Software</option>
-              <option value="School Software">School Software</option>
-              <option value="Hospital Software">Hospital Software</option>
-              <option value="Retail Software">Retail Software</option>
-              <option value="SuperMarket Software">SuperMarket Software</option>
-              <option value="Currior Software">Currior Software</option>
-              <option value="IVR Software">IVR Software</option>
-              <option value="Office Software">Office Software</option>
-              <option value="HRM Software">HRM Software</option>
-              <option value="Showroom Software">Showroom Software</option>
-              <option value="MLM Software">MLM Software</option>
-              <option value="Instiute Software">Instiute Software</option>
-            </select>
+           
             
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message"></textarea>
@@ -607,6 +591,29 @@ margin-right: 100px; /* Space between buttons */
             <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const email = 'kwagaecom@gmail.com';
+            const subject = 'Internship Program Application';
+
+            let message = "Form Submission Details:\n\n";
+            for (const [key, value] of formData.entries()) {
+                message += `${key}: ${value}\n`;
+            }
+
+            const mailtoURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+            window.location.href = mailtoURL;
+        });
+    </script>
         
         <div class="col-lg-4 col-md-12 aside">
           <h2 class="text-light p-3 text-center">Contact Us</h2>
